@@ -1,0 +1,95 @@
+@import '../../style/varibale';
+
+.app_services {
+    .app_services_items {
+        background: #F4F4F4;
+        margin-top: 100px;
+        .app_services_container {
+            width: 95%;
+            margin: auto;
+
+            .app_serives_content {
+                padding-top: 70px;
+                padding-bottom: 70px;
+            
+
+                h3 {
+                    color: #282828;
+                    font-family: Cairo;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    text-transform: capitalize;
+
+                    @media screen and (width < 767px) {
+                     font-size: 18px;
+                    }
+                }
+
+                ul {
+                    list-style: arabic-indic !important;
+                    @media screen and (width < 767px) {
+                      padding: 15px !important;
+                    }
+                    li {
+                        color: #282828;
+                        font-family: $fontBase;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        text-transform: capitalize;
+                        @media screen and (width < 767px) {
+                            font-size: 14px;
+                           }
+                    }
+                }
+            }
+
+            .app_serives_header {
+                border-radius: 21px;
+                border: 6px solid #FFF;
+                background: #414042;
+                height: 100% !important;
+                width: 70%;
+                margin: auto; 
+
+                @media screen and (width < 767px) {
+                    width: 90%;
+                }
+                h1 {
+                    color: rgba(255, 255, 255, 0.30);
+                    font-family: $fontBase;
+                    padding:30px 60px;
+                    font-size: 96px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                    text-transform: capitalize;
+                    @media screen and (width < 767px) {
+                       font-size: 80px;
+                    }
+                    
+                }
+                .footer{
+                    padding:30px 40px;
+
+                    img{
+                        filter: brightness(0) invert(1);
+
+                    }
+                    span{
+                        color: #FFF;
+                        font-family: Cairo;
+                        font-size: 28px;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: normal;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+}

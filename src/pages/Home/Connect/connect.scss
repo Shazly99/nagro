@@ -1,0 +1,40 @@
+@import '../../../style/varibale';
+
+.app_clients_home {
+    .client_span {
+        color: #C4AB73;
+        font-family: $fontBase !important;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        text-transform: capitalize;
+
+        @media screen and (width < 767px) {
+            font-size: 25px;
+    
+        }
+    }
+
+    .p-button { 
+        display: flex;
+        gap: 10px;
+        background-color: $mainColor;
+        border: none;
+        .p-button-label{
+            color: #FFF;
+            font-family: $fontBase; 
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+    }
+    textarea, input{
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        background: #FFF;
+        padding: 10px;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), 0px 4px 42px 0px rgba(0, 0, 0, 0.10), 0px 23px 76px 0px rgba(0, 0, 0, 0.09), 0px 172px 103px 0px rgba(0, 0, 0, 0.05), 0px 305px 122px 0px rgba(0, 0, 0, 0.01), 0px 477px 134px 0px rgba(0, 0, 0, 0.00);
+    }
+}

@@ -1,0 +1,51 @@
+@import '../../../style/varibale';
+
+.app__clients {
+    background: rgba(39, 39, 39, 0.98);
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .app__clients-left { 
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        h1 { 
+            color: $mainColor;
+          }
+        p { 
+            color: #ffffff !important; 
+            font: 400 22px "Poppins", sans-serif;
+            width: 100%;
+            line-height: 1.5;
+        }
+        @media screen and (max-width:767px) {
+            padding-top: 30px;
+        }
+        
+    }
+    .app__clients-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .slider__item{
+        img{
+            padding: 15px 20px; 
+            border-radius: 10px; 
+            background-color:white;
+            // backdrop-filter: blur(6px);
+            // -webkit-backdrop-filter: blur(6px);
+            // background-color: rgba($color: #000000, $alpha: 0.4) !important;
+            &:hover{
+                box-shadow: none !important;
+            }
+        }
+
+    }
+}

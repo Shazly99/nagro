@@ -1,0 +1,167 @@
+@import '../../style/varibale';
+
+.app_footer {
+    background-color: $secondColor;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    .app_footer_container {
+        width: 85%;
+        margin: auto;
+    }
+
+    .app_footer_content {
+        @media screen and (width < 992px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        p {
+            color: #FFF;
+            font-family: $fontBase !important;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: capitalize;
+            margin-top: 20px;
+            @media screen and (width < 992px) {
+              text-align: center;
+            }
+        }
+
+        .app_footer_social {
+            margin-top: 70px;
+            @media screen and (width < 992px) {
+                margin-top: 20px;
+              }
+            span {
+                color: #FFF;
+                font-family: $fontBase !important;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-transform: capitalize;
+            }
+
+            .icons {
+                display: flex;
+
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .app_footer_call {
+
+        @media screen and (width < 992px) {
+           margin-top: 0 !important;
+          }
+        span {
+            color: #FFF;
+            font-family: $fontBase !important;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+
+        padding-right: 30px;
+
+        .item {
+            margin-top: 20px;
+
+            svg {
+                width: 20px !important;
+                height: 20px !important;
+            }
+
+            span {
+                color: #C4AB73;
+                text-align: right;
+                font-family: $fontBase !important;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: capitalize;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .app_footer_location {
+
+        @media screen and (width < 992px) {
+            margin-top: 40px;
+        }
+
+        .link {
+            .active {
+                color: #C4AB73;
+                font-family: $fontBase !important;
+                font-size: 15px !important;
+                font-style: normal;
+                font-weight: 400 !important;
+                line-height: normal;
+                text-transform: capitalize;
+                opacity: 1 !important;
+            }
+
+            .nav-link {
+                color: #C4AB73 !important;
+                font-family: $fontBase !important;
+                font-size: 15px !important;
+                font-style: normal;
+                font-weight: 700 !important;
+                line-height: normal;
+                text-transform: capitalize;
+                opacity: 0.6;
+            }
+        }
+
+        .address_footer {
+            span {
+                color: #FFF;
+                font-family: $fontBase !important ;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-transform: capitalize;
+            }
+
+            .item {
+                margin-top: 9px !important;
+
+                p {
+                    color: #C4AB73;
+                    font-family: $fontBase !important;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-transform: capitalize;
+
+                    strong {
+                        color: #C4AB73;
+                        font-family: $fontBase !important;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: normal;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+}

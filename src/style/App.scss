@@ -1,0 +1,202 @@
+@import './varibale';
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
+
+
+
+
+// ul {
+//     margin: 0px !important;
+//     padding: 0 !important;
+//     list-style: none !important;
+// }
+
+.modal-backdrop {
+    z-index: 2 !important;
+}
+
+.modal {
+    z-index: 2 !important;
+}
+
+.modal-body {
+    background: rgba(206, 147, 26, 0.07) !important;
+    border-radius: 5px !important;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+    background: rgba($color: $mainColor, $alpha: 0.4) !important;
+    color: $dark !important;
+}
+
+
+.popup_chat {
+    .p-button {
+        background-color: $dark !important;
+        padding: 10px !important;
+        box-shadow: 0px 6.17143px 23.14286px 0px rgba(206, 147, 26, 0.76) !important;
+    }
+
+}
+
+.chat {
+    position: fixed;
+    top: calc(100vh - 90px);
+    width: 150px;
+    height: 150px;
+
+    .p-button {
+        background-color: $dark !important;
+        padding: 10px !important;
+        transition: all 0.5s;
+
+        &:hover {
+            box-shadow: 0px 6.17143px 23.14286px 0px rgba(206, 147, 26, 0.76) !important;
+            transform: scale(1.2);
+        }
+
+    }
+}
+
+.chatAr {
+    right: -0px;
+    z-index: 99999999 !important;
+}
+
+.chatEn {
+    left: 0px;
+}
+
+.popup {
+    display: none !important;
+    position: fixed !important;
+    top: calc(100vh - 60px) !important;
+    right: -100px !important;
+    height: 506px;
+    z-index: 9999;
+    display: flex;
+    width: 300.076px;
+    padding: 74.419px 16.004px 53.213px 16.004px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 55.884px;
+    border-radius: 24.589px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 4.91429px 25px 0px rgba(206, 147, 26, 0.15) !important;
+    overflow: hidden;
+
+    p {
+        color: var(--dark, #162A2B);
+        text-align: center;
+        font-family: Cairo;
+        font-size: 14.753px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 170.4%;
+        /* 25.14px */
+    }
+}
+
+.Chat_Image {
+    width: 150px !important;
+    height: 150px !important;
+}
+
+.popup.openAr {
+    display: flex !important;
+    top: calc(100vh - 550px) !important;
+    z-index: 0;
+    right: 60px !important;
+}
+
+.popup.openEn {
+    display: flex !important;
+    top: calc(100vh - 550px) !important;
+    z-index: 0;
+    left: 26px !important;
+}
+
+.popup button {
+    background-color: #ccc;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.p-toast {
+    z-index: 9999999999999999999 !important;
+}
+
+.p-message .p-message-wrapper {
+    padding: 10px 1.75rem !important;
+}
+
+.p-inline-message .p-inline-message-text {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.slider_overlay {
+    position: relative;
+
+    @media screen and (width < 900px) {
+        margin-top: 80px;
+    }
+
+    .overlay {
+        position: absolute;
+        inset: 0;
+        background-color: $mainBg;
+    }
+}
+
+.header_banner {
+    position: relative;
+
+    @media screen and (width < 1400px) {
+        margin-top: 90px !important;
+    }
+
+    @media screen and (width < 1030px) {
+        margin-top: 80px !important;
+    }
+
+    img {
+        @media screen and (width < 900px) {
+            height: 500px;
+            object-fit: cover;
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+
+        .header {
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.16);
+            backdrop-filter: blur(333px);
+            padding: 5px 65px;
+            margin-bottom: 120px;
+
+            span {
+                color: #FFF;
+                font-family: Cairo;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: capitalize;
+
+                @media screen and (width < 900px) {
+
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}

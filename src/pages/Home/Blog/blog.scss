@@ -1,0 +1,160 @@
+@import '../../../style/varibale';
+
+.app_blog_home {
+    background-image: url('../../../assets/Images/bg_blogs.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 65px;
+    // padding-bottom: 65px;
+
+    min-height: calc(100vh - 150px);
+
+    .app_blog_container {
+        width: 80%;
+        margin: auto;
+
+        .app_blog_content {
+            border: 1px solid #C4AB73;
+
+            h1 {
+                color: #383B52;
+                text-align: center;
+                font-family: $fontBase;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: capitalize;
+            }
+
+            .blog_overlay {
+                position: relative;
+
+                .overlay {
+                    position: absolute;
+
+                    inset: 0;
+
+                    .blog_date {
+                        position: absolute;
+                        right: 50%;
+                        transform: translateX(50%);
+                        bottom: 24px;
+
+                        span {
+                            color: #FFF;
+                            font-family: $fontBase;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            text-transform: capitalize;
+                        }
+                    }
+
+                    .blog_title {
+
+                        position: absolute;
+                        right: 50px;
+                        top: 50px;
+
+                        span {
+                            color: #FFF;
+                            text-shadow: 0px 1px 7px rgba(0, 0, 0, 0.14);
+                            font-family: $fontBase;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            text-transform: capitalize;
+                            border-radius: 13px;
+                            background: rgba(217, 217, 217, 0.18);
+                            backdrop-filter: blur(44px);
+                            padding: 14px 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .app_blog_header {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        flex-direction: column;
+
+
+
+        span {
+            color: #FFF;
+            font-family: $fontBase;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: capitalize;
+            @media screen and (width < 992px) {
+                font-size: 35px;
+            }
+        }
+
+        p {
+            color: #FFF;
+            font-family: $fontBase;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: capitalize;
+            @media screen and (width < 992px) {
+                font-size: 20px;
+            }
+        }
+
+        .btn_more_header {
+            border-radius: 2px;
+            background: #C4AB73;
+            margin-top: 30px;
+            width: fit-content;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 10px 20px;
+
+            &:hover {
+                box-shadow: none !important;
+            }
+
+            border-radius: 10px;
+
+            span {
+                color: #282828;
+                font-family: $fontBase;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: capitalize;
+            }
+
+            svg {
+                path {
+                    fill: #282828
+                }
+            }
+        }
+    }
+}
+
+.blog_slider{
+    .slider__item{
+        @media screen and (width < 992px) {
+         padding: 20px 5px !important;
+        }
+    }
+}

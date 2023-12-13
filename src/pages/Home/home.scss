@@ -1,0 +1,194 @@
+// background: url(<path-to-image>), lightgray -0.342px -0.663px / 163.958% 251.17% no-repeat;
+
+@import '../../style/varibale';
+
+.span_header {
+    color: #C4AB73;
+    font-family: $fontBase !important;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        background: #282828;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        bottom: -5px;
+    }
+
+    @media screen and (width < 767px) {
+        font-size: 20px;
+    }
+}
+
+.app_about {
+    .logo_bg {
+        img {
+            width: 50%;
+            object-fit: contain;
+        }
+
+        @media screen and (width < 1000px) {
+            height: 330px;
+        }
+
+        background-image: url('../../assets/Images/bg.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .content {
+        p {
+            color: #282828;
+            text-align: right;
+            font-family: $fontBase !important;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: capitalize;
+            margin-top: 37px;
+
+            @media screen and (width < 767px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+
+    .about_app_2th {
+        margin-top: 100px;
+
+        .content_th2 {
+            p {
+                color: #282828;
+                text-align: right;
+                font-family: $fontBase;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-transform: capitalize;
+                margin: 0;
+                padding: 0;
+
+                @media screen and (width < 767px) {
+                    font-size: 16px;
+
+                }
+            }
+        }
+
+    }
+}
+
+[dir="ltr"] .about_app_2th .content_th2 {
+    p {
+        text-align: left;
+    }
+}
+
+.logo_bg_2th {
+    @media screen and (width < 1000px) {
+        margin-top: 30px !important;
+    }
+
+}
+
+[dir="rtl"] .logo_bg_2th_img {
+    left: -80px !important;
+    top: 50%;
+    width: 70%;
+    transform: translateY(-50%);
+
+
+    @media screen and (width < 1500px) {
+        left: -50px !important;
+    }
+
+    @media screen and (width < 1000px) {
+        width: 70%;
+        left: -0px !important;
+    }
+}
+
+.logo_bg_1th {
+    @media screen and (width < 1000px) {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+}
+
+[dir="ltr"] .logo_bg_2th_img {
+    right: -80px !important;
+    top: 50%;
+    width: 70%;
+    transform: translateY(-50%);
+}
+
+.btn_more {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+    color: #C4AB73;
+    font-family: $fontBase !important;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+        content: '';
+        position: absolute;
+        background: #C4AB73;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        bottom: -5px;
+    }
+
+    
+    @media screen and (width < 767px) {
+        font-size: 16px;
+
+    }
+}
+
+[dir="ltr"] .btn_more svg {
+    transform: rotate(-180deg);
+}
+
+
+
+
+[dir="ltr"] .border-right {
+    border-right: 1px solid #000;
+
+    @media screen and (width < 1000px) {
+        border: none;
+    }
+
+}
+
+
+[dir="rtl"] .border-right {
+    border-left: 1px solid #000;
+
+    @media screen and (width < 1000px) {
+        border: none ;
+    }
+
+}
