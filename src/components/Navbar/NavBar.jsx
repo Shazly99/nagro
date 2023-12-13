@@ -50,7 +50,7 @@ const NavBar = ({ navbarColor }) => {
     }, [currentLanguage, t])
     const handleLanguageChange = (selectedLanguageCode) => {
         setIsLang(selectedLanguageCode);
-        if (selectedLanguageCode === 'fr') {
+        if (selectedLanguageCode === 'en') {
             document.body.dir = 'ltr';
         } else {
             document.body.dir = 'rtl';
@@ -111,7 +111,7 @@ const NavBar = ({ navbarColor }) => {
                                                                     <span className='text ' style={{ marginBottom: '4px' }}>  عربيه</span>
                                                                     <Icons.LangOutline />
                                                                 </div> :
-                                                                <div className="change-lang" onClick={(eventKey) => handleLanguageChange('en')}>
+                                                                <div className="change-lang" onClick={(eventKey) => handleLanguageChange('ar')}>
                                                                     <span className='text ' /* style={{ marginBottom: '2px' }} */>  English</span>
                                                                     <Icons.LangOutline />
                                                                 </div>

@@ -9,9 +9,16 @@ const routes = [
         icon: <i className='pi pi-home'></i>,
     },
     {
-        path: "/about-us",
+        path: "/about",
         nameEn: "about Us",
         nameAr: "من نحــن ",
+        icon: <i className='pi pi-home'></i>,
+    },
+
+    {
+        path: "/services",
+        nameEn: "Our Services",
+        nameAr: "خدماتنا",
         icon: <i className='pi pi-home'></i>,
     },
     {
