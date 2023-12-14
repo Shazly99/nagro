@@ -26,6 +26,11 @@
                 font-weight: 700;
                 line-height: normal;
                 text-transform: capitalize;
+                @media screen and (width < 900px) { 
+                    font-size: 23px;
+
+
+                }
             }
 
             .blog_overlay {
@@ -42,6 +47,7 @@
                         transform: translateX(50%);
                         bottom: 24px;
 
+               
                         span {
                             color: #FFF;
                             font-family: $fontBase;
@@ -50,6 +56,11 @@
                             font-weight: 500;
                             line-height: normal;
                             text-transform: capitalize;
+                            @media screen and (width < 900px) { 
+                                font-size: 16px;
+
+                            }
+    
                         }
                     }
 
@@ -58,7 +69,11 @@
                         position: absolute;
                         right: 50px;
                         top: 50px;
+                        @media screen and (width < 900px) { 
+                            right: 10px;
+                            top: 30px;
 
+                        }
                         span {
                             color: #FFF;
                             text-shadow: 0px 1px 7px rgba(0, 0, 0, 0.14);
@@ -71,7 +86,13 @@
                             border-radius: 13px;
                             background: rgba(217, 217, 217, 0.18);
                             backdrop-filter: blur(44px);
-                            padding: 14px 7px;
+                            padding: 14px 10px;
+
+                            @media screen and (width < 900px) { 
+                                padding: 7px 10px;
+    
+                            font-weight: 400;
+                            }
                         }
                     }
                 }
@@ -96,6 +117,7 @@
             font-weight: 700;
             line-height: normal;
             text-transform: capitalize;
+
             @media screen and (width < 992px) {
                 font-size: 35px;
             }
@@ -109,6 +131,7 @@
             font-weight: 400;
             line-height: normal;
             text-transform: capitalize;
+
             @media screen and (width < 992px) {
                 font-size: 20px;
             }
@@ -151,10 +174,10 @@
     }
 }
 
-.blog_slider{
-    .slider__item{
+.blog_slider {
+    .slider__item {
         @media screen and (width < 992px) {
-         padding: 20px 5px !important;
+            padding: 20px 5px !important;
         }
     }
 }

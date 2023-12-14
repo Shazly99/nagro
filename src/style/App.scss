@@ -1,15 +1,6 @@
 @import './varibale';
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
-
-
-
-
-// ul {
-//     margin: 0px !important;
-//     padding: 0 !important;
-//     list-style: none !important;
-// }
-
+ 
 .modal-backdrop {
     z-index: 2 !important;
 }
@@ -199,4 +190,8 @@
             }
         }
     }
+}
+
+ul li::marker {
+    color: $mainColor;
 }

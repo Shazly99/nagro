@@ -21,6 +21,12 @@ import header from 'assets/Images/header.png'
 import banner_services from 'assets/Images/banner_services.png'
 import banner_about from 'assets/Images/banner_about.png'
 import About1 from 'assets/Images/about1.png'
+import Owner1 from 'assets/Images/الشركاء المؤسسون.png'
+import Owner2 from 'assets/Images/Owner2.png'
+import Blog1 from 'assets/Images/Blog1.png'
+import Blog2 from 'assets/Images/Blog2.png'
+import Blog3 from 'assets/Images/Blog3.png'
+import Blog4 from 'assets/Images/Blog4.png'
 
 
 const img = {
@@ -42,8 +48,14 @@ const img = {
     Servies1Icon5,
     why_us1,
     why_us2,
+    Owner1,
     why_us3,
-    blog
+    blog,
+    Owner2,
+    Blog1,
+    Blog2,
+    Blog3,
+    Blog4
 }
 
 export default img;

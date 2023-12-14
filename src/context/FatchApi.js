@@ -16,13 +16,13 @@ function FatchApi({ children }) {
 
     const [data, setData] = useState(null)
     const apiHome = () => {
-        GetData(url, header).then((data) => {
-            if (data?.status === 200) {
-                console.log(data);
+        // GetData(url, header).then((data) => {
+        //     if (data?.status === 200) {
+        //         console.log(data);
 
-                setData(data)
-            }
-        })
+        //         setData(data)
+        //     }
+        // })
     }
     useEffect(() => {
         apiHome()

@@ -1,9 +1,13 @@
 import img from 'constants/Img'
-import React from 'react'
+import React, { useEffect } from 'react'
 import './services.scss'
 import { Col, Row } from 'react-bootstrap'
 
 const Services = () => {
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
+
   return (
     <div className='app_services overflow-hidden'>
       <div className="header_banner " style={{ marginTop: '90px' }}>

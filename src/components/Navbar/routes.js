@@ -11,7 +11,14 @@ const routes = [
     {
         path: "/about",
         nameEn: "about Us",
-        nameAr: "من نحــن ",
+        nameAr: "نبذة عنا",
+        icon: <i className='pi pi-home'></i>,
+    },
+
+    {
+        path: "/blogs",
+        nameEn: "Our blogs",
+        nameAr: "الاخبار و المقالات",
         icon: <i className='pi pi-home'></i>,
     },
 
@@ -24,7 +31,7 @@ const routes = [
     {
         path: "/contact-us",
         nameEn: "Contact Us ",
-        nameAr: "اتصل بنا",
+        nameAr: "تواصل معنا",
         icon: <i className='pi pi-phone'></i>,
 
     },

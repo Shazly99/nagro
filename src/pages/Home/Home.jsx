@@ -1,11 +1,15 @@
 import Component from 'constants/Component'
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import './home.scss'
 import ServiceHome from './Service/ServiceHome'
 import { ApiContext } from 'context/FatchApi'
 
 
 const Home = () => {
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
+
   let { data } = useContext(ApiContext)
   return (
     <div className=''>

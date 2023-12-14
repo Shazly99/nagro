@@ -1,7 +1,12 @@
 import img from 'constants/Img'
 import ConnectHome from 'pages/Home/Connect/ConnectHome'
+import { useEffect } from 'react'
 
 const Connect = () => {
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
+
   return (
 
     <div className="app_connect">
