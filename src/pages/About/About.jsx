@@ -5,6 +5,7 @@ import { Col, Row } from 'react-bootstrap'
 import Icons from 'constants/Icons'
 import { Button } from 'primereact/button'
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 const About = () => {
   useEffect(() => {
     window.scroll(0, 0)
@@ -113,7 +114,7 @@ const About = () => {
             <Col xl={7} lg={7} md={7} sm={12} className='owner_content_col  '>
               <div className="owner_content_body">
                 <div className="title">
-                <h2>المؤهلات</h2>
+                  <h2>المؤهلات</h2>
 
                 </div>
                 <ul className='flex flex-column gap-3 mt-5'>
@@ -176,6 +177,8 @@ const About = () => {
           <Row>
             <Col xl={8} lg={8} md={8} sm={12} className='contact_sm'>
               <span className='contact_title'>نحن مستعدون لاستفساراتكم و استشاراتكم القانونية</span>
+
+
               <div className="contact_call flex gap-4 align-items-center">
                 <Icons.Call />
                 <span>تواصل مع فريقنا الآن !</span>
@@ -183,7 +186,10 @@ const About = () => {
             </Col>
 
             <Col xl={4} lg={4} md={4} sm={12} className='flex justify-content-center align-items-center'>
-              <Button label='تواصل معنا' />
+              <Link to={'/contact-us'}>
+                <Button label='تواصل معنا' />
+
+              </Link>
             </Col>
 
           </Row>

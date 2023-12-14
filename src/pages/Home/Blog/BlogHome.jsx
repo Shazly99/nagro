@@ -4,6 +4,7 @@ import { Col, Row } from 'react-bootstrap'
 import Icons from 'constants/Icons'
 import img from 'constants/Img';
 import Slider from 'react-slick';
+import { Link } from 'react-router-dom';
 const BlogHome = () => {
   const settings = {
     dots: false,
@@ -53,10 +54,15 @@ const BlogHome = () => {
               <header className='app_blog_header'>
                 <span>مقالاتنا</span>
                 <p>اخر المقالات القانونية و الاخبار</p>
-                <div className="btn_more_header shadow-lg cursor-pointer user-select-none">
-                  <span>رؤية المزيد</span>
-                  <Icons.ArrowMore className='mt-1' />
-                </div>
+
+
+                <Link to={'/blogs'}>
+                  <div className="btn_more_header shadow-lg cursor-pointer user-select-none">
+                    <span>رؤية المزيد</span>
+                    <Icons.ArrowMore className='mt-1' />
+                  </div> 
+                </Link>
+
               </header>
             </Col>
             <Col xl={8} lg={8} md={6} sm={12} className='blog_slider'>
