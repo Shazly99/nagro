@@ -9,7 +9,7 @@
 
         .master_about_header_container {
             width: 80%;
-            margin: auto; 
+            margin: auto;
 
             .content {
                 width: 65%;
@@ -94,7 +94,7 @@
                 text-transform: capitalize;
                 position: relative;
                 margin-bottom: 50px !important;
-       
+
                 &::after {
                     content: '';
                     position: absolute;
@@ -123,9 +123,10 @@
             text-transform: capitalize;
             padding-top: 70px;
             padding-bottom: 40px;
+
             @media screen and (width < 767px) {
-                font-size: 16px; 
-            padding-top: 30px;
+                font-size: 16px;
+                padding-top: 30px;
 
             }
         }
@@ -139,13 +140,13 @@
             text-align: center;
 
             span {
-                color: #C4AB73; 
+                color: #C4AB73;
                 font-family: Cairo;
                 font-size: 30px;
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
-                text-transform: capitalize; 
+                text-transform: capitalize;
                 margin-bottom: 50px !important;
                 position: relative;
 
@@ -168,36 +169,48 @@
         .owner_content {
             width: 95%;
             margin: auto;
+
             @media screen and (width < 767px) {
-              margin-top: 70px;
+                margin-top: 70px;
             }
+
             .owner_content_body {
                 margin-top: 90px;
+                @media screen and (width < 767px) {
+                    margin-top: 0px;
 
-                h2 {
-                    color: #414042;
-                    text-align: right;
-                    font-family: Cairo;
-                    font-size: 38px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: normal;
-                    text-transform: capitalize;
-                    position: relative;
-                    width: fit-content;
-
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        background: $mainColor;
-                        width: 100%;
-                        height: 1px;
-                        left: 0;
-                        bottom: -5px;
-                    }
-
+                }
+                .title{
                     @media screen and (width < 767px) {
-                        font-size: 20px;
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                    }
+                    h2 {
+                        color: #414042; 
+                        font-family: Cairo;
+                        font-size: 38px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        text-transform: capitalize;
+                        position: relative;
+                        width: fit-content;
+    
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            background: $mainColor;
+                            width: 100%;
+                            height: 1px;
+                            left: 0;
+                            bottom: -5px;
+                        }
+    
+                        @media screen and (width < 767px) {
+                            font-size: 20px; 
+                            
+                        }
                     }
                 }
 
@@ -211,6 +224,12 @@
                         font-weight: 700;
                         line-height: normal;
                         text-transform: capitalize;
+                        @media screen and (width < 767px) {
+                        font-size: 14px;
+
+                            font-weight: 400;
+
+                        }
                     }
                 }
             }
@@ -224,6 +243,8 @@
                     background-position: center center;
                     background-size: contain;
                     padding: 10px;
+
+
                 }
 
                 .owner_desc_img2 {
@@ -237,7 +258,14 @@
 
                 .jop_title {
                     margin-top: -50px;
-           
+
+                    @media screen and (width < 600px) {
+                        width: 90% !important;
+                        margin-top: -20px;
+                        padding: 5px 10px !important;
+
+                    }
+
 
                     img {
                         width: 80px;
@@ -246,10 +274,18 @@
                         padding: 2px 2px 0 2px;
                         background-color: $mainColor !important;
                         border-radius: 4px;
-                        
+
+                        @media screen and (width < 600px) {
+                            width: 65px;
+                            height: 100% !important;
+                            object-fit: contain;
+                        }
+
+
                     }
 
-                    .info {
+                    .info { 
+                   
                         span {
                             color: #000;
                             text-align: right;
@@ -259,6 +295,10 @@
                             font-weight: 700;
                             line-height: normal;
                             text-transform: capitalize;
+
+                            @media screen and (width < 600px) {
+                                font-size: 17px;
+                            }
                         }
 
                         p {
@@ -270,6 +310,12 @@
                             font-weight: 400;
                             line-height: normal;
                             text-transform: capitalize;
+
+                            margin: 0 !important;
+                            padding: 0 !important;
+                            @media screen and (width < 600px) {
+                                font-size: 16px;
+                            }
                         }
                     }
                 }
@@ -290,9 +336,11 @@
     position: relative;
     margin-right: 150px;
     margin-bottom: 50px !important;
+
     @media screen and (width < 900px) {
-        margin-right: 50px; 
+        margin-right: 50px;
     }
+
     &::after {
         content: '';
         position: absolute;
@@ -317,7 +365,8 @@
         margin: auto;
         padding-top: 100px !important;
         padding-bottom: 100px !important;
-        .contact_sm{
+
+        .contact_sm {
             @media screen and (width < 767px) {
                 display: flex;
                 justify-content: center;
@@ -330,7 +379,7 @@
     }
 
     .contact_title {
-        color: #000; 
+        color: #000;
         font-family: Cairo;
         font-size: 32px;
         font-style: normal;
@@ -341,6 +390,13 @@
         @media screen and (width < 767px) {
             font-size: 20px;
             text-align: center;
+            font-family: 400 !important;
+            margin-bottom: 20px;
+        }
+        @media screen and (width < 400px) {
+            font-size: 18px;
+            text-align: center;
+            font-family: 400 !important;
         }
     }
 
@@ -350,6 +406,7 @@
             padding: 3px;
             border-radius: 5px;
             margin-top: 5px;
+
             path {
                 fill: $mainColor;
             }
@@ -364,31 +421,35 @@
             font-weight: 700;
             line-height: normal;
             text-transform: capitalize;
+            @media screen and (width < 600px) {
+                font-size: 20px;
+            }
         }
     }
-    .p-button{
+
+    .p-button {
         background-color: $mainColor;
         border-radius: 5px;
-        border:  none;
-        padding-left:25px ;
-        padding-right:25px ;
+        border: none;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 }
 
-.owner_content_col{
+.owner_content_col {
     display: flex;
     align-items: center;
     justify-content: center;
 
     @media screen and (width < 767px) {
-        font-size: 20px; 
+        font-size: 20px;
     }
 }
 
-.owner_content_row{
-    
+.owner_content_row {
+
     @media screen and (width < 767px) {
-       display: flex !important;
-       flex-direction: column-reverse !important;
+        display: flex !important;
+        flex-direction: column-reverse !important;
     }
 }

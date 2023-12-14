@@ -632,6 +632,11 @@
         @media screen and (width < 1510px) {
             display: flex !important;
         }
+
+        @media screen and (width < 767px) {
+            height: 50px;
+
+        }
     }
 }
 

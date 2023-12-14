@@ -112,7 +112,10 @@ const About = () => {
 
             <Col xl={7} lg={7} md={7} sm={12} className='owner_content_col  '>
               <div className="owner_content_body">
+                <div className="title">
                 <h2>المؤهلات</h2>
+
+                </div>
                 <ul className='flex flex-column gap-3 mt-5'>
                   <li>حاصل على دبلوم التحكیم الدولي</li>
                   <li>ماجستیر قانون خاص من كلیة الشرق العربي بالریاض</li>
@@ -130,9 +133,12 @@ const About = () => {
         </div>
 
         <div className="owner_content mt-8">
-          <Row> 
+          <Row>
             <Col xl={7} lg={7} md={7} sm={12} className='owner_content_col'>
               <div className="owner_content_body">
+                <div className="title">
+                  <h2>المؤهلات</h2>
+                </div>
 
                 <ul className='flex flex-column gap-3 mt-5'>
                   <li>ماجستیر قانون خاص من كلیة الشرق العربي بالریاض</li>
@@ -152,7 +158,7 @@ const About = () => {
                 <img src={img.Owner2} alt="" className='w-75 owner_desc_img2' />
                 <div className="jop_title flex flex-row align-items-center bg-light gap-3 w-27rem  rounded-3 shadow-3 p-2">
                   <img src={img.Owner2} alt="" srcset="" width={100} />
-                  <div className="info">
+                  <div className="info  ">
                     <span>طلعت عبد الرحيم ناقرو</span>
                     <p> تجاوزت خبراتي۳۰ عاما.</p>
                   </div>
@@ -168,7 +174,7 @@ const About = () => {
       <div className="owner_contact overflow-hidden">
         <div className="conatct_container">
           <Row>
-            <Col xl={8} lg={8} md={8} sm={12} className='contact_sm'> 
+            <Col xl={8} lg={8} md={8} sm={12} className='contact_sm'>
               <span className='contact_title'>نحن مستعدون لاستفساراتكم و استشاراتكم القانونية</span>
               <div className="contact_call flex gap-4 align-items-center">
                 <Icons.Call />
