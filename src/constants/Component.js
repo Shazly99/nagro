@@ -1,5 +1,7 @@
+import { lazy } from 'react';
  
-import Home from 'pages/Home/Home';
+// import Home from 'pages/Home/Home';
+// export const Home = lazy(()=> import('pages/Home/Home'))
 import Nagro from 'layout/Nagro';
 import NotFound from 'components/notfound/NotFound';
 import NavBar from 'components/Navbar/NavBar';
@@ -11,11 +13,13 @@ import BlogHome from 'pages/Home/Blog/BlogHome';
 import ClientsHome from 'pages/Home/clients/ClientsHome';
 import ConnectHome from 'pages/Home/Connect/ConnectHome';
 import Connect from 'pages/Connect/Connect';
-import Services from './../pages/services/Services';
-import About from './../pages/About/About';
-import Blogs from './../pages/Blogs/Blogs';
+import Services from 'pages/services/Services';
+import About from 'pages/About/About';
+import Blogs from 'pages/Blogs/Blogs';
+
+
 const Component = { 
-   Home,
+   // Home,
    Slider,
    AboutHome,
    Nagro,

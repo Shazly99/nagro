@@ -15,11 +15,11 @@ const Home = () => {
     <div className=''>
       <Component.Slider />
       <Component.AboutHome />
-      <ServiceHome />
-      <Component.Why_us/>  
-      <Component.BlogHome/>
-      <Component.ClientsHome/>
-      <Component.ConnectHome/>
+     <ServiceHome />
+       <Component.Why_us/>  
+    <Component.BlogHome/>
+    <Component.ClientsHome/>
+      <Component.ConnectHome/> 
 
     </div>
   )

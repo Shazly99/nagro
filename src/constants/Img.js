@@ -27,12 +27,16 @@ import Blog1 from 'assets/Images/Blog1.png'
 import Blog2 from 'assets/Images/Blog2.png'
 import Blog3 from 'assets/Images/Blog3.png'
 import Blog4 from 'assets/Images/Blog4.png'
+import ArLang from 'assets/Images/ar.png'
+import EnLang from 'assets/Images/En.png'
 
 
 const img = {
     About1,
     Logo,
     header,
+    ArLang,
+    EnLang,
     banner_about,
     banner_services,
     achievements,

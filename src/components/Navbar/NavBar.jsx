@@ -92,7 +92,7 @@ const NavBar = ({ navbarColor }) => {
                     fixed={scrollPosition > 600 ? 'top' : 'top'}
                     collapseOnSelect
                     expand="sm"
-                    className={`${navbarColor} ${scrollPosition > 600 ? 'scroll navbar-navOnthorPAge shadow-sm ' : ''} shadow`}
+                    className={`${navbarColor} ${scrollPosition > 600 ? 'scroll navbar-navOnthorPAge shadow-lg ' : ''} shadow`}
                 >
                     <div className="flex justify-content-between    align-items-center  w-100 container-fluid  "
                         dir={cookies.get('i18next') === 'en' || cookies.get('i18next') === 'fr' ? 'rtl' : 'ltr'}
@@ -109,11 +109,11 @@ const NavBar = ({ navbarColor }) => {
                                                             isLang === "en" ?
                                                                 <div className="change-lang  " onClick={(eventKey) => handleLanguageChange('ar')}>
                                                                     <span className='text ' style={{ marginBottom: '4px' }}>  عربيه</span>
-                                                                    <Icons.LangOutline />
+                                                                    <img src={img.ArLang} alt="images"   />
                                                                 </div> :
-                                                                <div className="change-lang" onClick={(eventKey) => handleLanguageChange('ar')}>
+                                                                <div className="change-lang" onClick={(eventKey) => handleLanguageChange('en')}>
                                                                     <span className='text ' /* style={{ marginBottom: '2px' }} */>  English</span>
-                                                                    <Icons.LangOutline />
+                                                                    <img src={img.EnLang} alt="images"   />
                                                                 </div>
                                                         }
                                                     </div>
@@ -122,12 +122,12 @@ const NavBar = ({ navbarColor }) => {
                                                             <motion.div
                                                                 className='app__menu-talk'
                                                                 whileHover={{ scale: 1.1 }}
-                                                                whileTap={{ scale: 0.8 }} >
-                                                                {isLang === "en" ? 'let’s Talk' : ' ! إسألنا الحين '}
-                                                                <span className="spinner-grow spinner-grow-sm" role="status"    ></span>
+                                                                whileTap={{ scale: 0.8 }} > 
+                                                                {t('nav_contact')}
+                                                                <span className="spinner-grow spinner-grow-sm" role="status"></span>
                                                             </motion.div>
                                                         </Link>
-                                                         
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -156,7 +156,7 @@ const NavBar = ({ navbarColor }) => {
                             <div className="sidebar_lg">
                                 <Button icon="pi pi-bars" rounded outlined severity="secondary" onClick={() => setVisibleRight(true)} />
                             </div>
-                            <img src={img.Logo}  alt='logo nagro' />
+                            <img src={img.Logo} alt='logo nagro' />
                         </div>
 
 
@@ -184,11 +184,12 @@ const NavBar = ({ navbarColor }) => {
                                     </section>
                                 </div>
 
-            {/*                     <div className="change_lang-sidebar " dir='rtl '>
+
+                                <div className="change_lang-sidebar " dir='rtl '>
                                     {
                                         isLang === "en" ?
                                             <motion.div
-                                                className='app__menu-talk cursor-pointer'
+                                                className='app__menu-talk cursor-pointer '
                                                 whileHover={{ scale: 1.1 }}
                                                 whileTap={{ scale: 0.8 }}
                                                 onClick={() => {
@@ -199,10 +200,10 @@ const NavBar = ({ navbarColor }) => {
 
                                             >
                                                 عربيه
-                                                <img src={img.ArLang} alt="images" />
+                                                <img src={img.ArLang} alt="images" className='rounded-circle' />
                                             </motion.div> :
                                             <motion.div
-                                                className='app__menu-talk cursor-pointer'
+                                                className='app__menu-talk cursor-pointer '
                                                 whileHover={{ scale: 1.1 }}
                                                 whileTap={{ scale: 0.8 }}
                                                 onClick={() => {
@@ -216,7 +217,7 @@ const NavBar = ({ navbarColor }) => {
                                                 <img src={img.EnLang} alt="images" />
                                             </motion.div>
                                     }
-                                </div> */}
+                                </div>
                             </div>
                         </Sidebar>
                     </div>

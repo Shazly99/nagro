@@ -21,7 +21,7 @@ const Blogs = () => {
 
       <div className="app_blog_container">
         <Row>
-          <Col xl={6} lg={6} md={12} sm={12} className='blog_padding sm:p-0'>
+          <Col xl={6} lg={6} md={12} sm={12} className='blog_padding  '>
             <div className="blof_contact">
               <div className="blog_img">
                 <img src={img.Blog1} alt="" srcset="" />

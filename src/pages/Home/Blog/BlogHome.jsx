@@ -76,7 +76,7 @@ const BlogHome = () => {
                         <img src={img.blog} className='w-100 rounded-3' />
                         <div className="overlay">
                           <div className="blog_date">
-                            <span> 15 كتوبر , 2021</span>
+                            <span> 15 اكتوبر , 2021</span>
                           </div>
                           <div className="blog_title">
                             <span>كتابة لوريم ابسوم</span>
@@ -93,7 +93,7 @@ const BlogHome = () => {
                         <img src={img.blog} className='w-100 rounded-3' />
                         <div className="overlay">
                           <div className="blog_date">
-                            <span> 15 كتوبر , 2021</span>
+                            <span> 15 اكتوبر , 2021</span>
                           </div>
                           <div className="blog_title">
                             <span>كتابة لوريم ابسوم</span>
@@ -110,7 +110,7 @@ const BlogHome = () => {
                         <img src={img.blog} className='w-100 rounded-3' />
                         <div className="overlay">
                           <div className="blog_date">
-                            <span> 15 كتوبر , 2021</span>
+                            <span> 15 اكتوبر , 2021</span>
                           </div>
                           <div className="blog_title">
                             <span>كتابة لوريم ابسوم</span>
@@ -127,7 +127,7 @@ const BlogHome = () => {
                         <img src={img.blog} className='w-100 rounded-3' />
                         <div className="overlay">
                           <div className="blog_date">
-                            <span> 15 كتوبر , 2021</span>
+                            <span> 15 اكتوبر , 2021</span>
                           </div>
                           <div className="blog_title">
                             <span>كتابة لوريم ابسوم</span>
@@ -144,7 +144,7 @@ const BlogHome = () => {
                         <img src={img.blog} className='w-100 rounded-3' />
                         <div className="overlay">
                           <div className="blog_date">
-                            <span> 15 كتوبر , 2021</span>
+                            <span> 15 اكتوبر , 2021</span>
                           </div>
                           <div className="blog_title">
                             <span>كتابة لوريم ابسوم</span>
@@ -161,7 +161,7 @@ const BlogHome = () => {
                         <img src={img.blog} className='w-100 rounded-3' />
                         <div className="overlay">
                           <div className="blog_date">
-                            <span> 15 كتوبر , 2021</span>
+                            <span> 15 اكتوبر , 2021</span>
                           </div>
                           <div className="blog_title">
                             <span>كتابة لوريم ابسوم</span>

@@ -7,7 +7,7 @@ i18next.use(HttpApi)
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
-        supportedLngs: [   'ar'],
+        supportedLngs: [  'en', 'ar'],
         fallbackLng: 'ar',
         debug: false,
         // Options for language detector

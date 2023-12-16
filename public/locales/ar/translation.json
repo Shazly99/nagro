@@ -4,6 +4,21 @@
   "nav_about":"نبذه عنا",
   "nav_service":"خدماتنا",
   "nav_blogs":"المقالات",
-  "nav_connect":"تواصل معنا"
-
+  "nav_connect":"تواصل معنا",
+  "nav_contact": "لنتحدث الان",
+  "footer_follow": "تابعنا علي",
+  "footer_contact": "بيانات التواصل",
+  "footer_address": "عنوان",
+  "contact_title": "ابقي علي تواصل",
+  "name": "الاسم",
+  "email": "بريد الالكتروني",
+  "phone": "رقم الجوال",
+  "reason": "سبب الاتصال",
+  "message": "اترك رسالتك",
+  "submit": "إرسال",
+  "placeholder_name": "أدخل أسمك",
+  "placeholder_email": "أدخل بريدك الإلكتروني",
+  "placeholder_phone": "رقم الهاتف الجوال",
+  "placeholder_reason": "ما سبب الاتصال",
+  "placeholder_message": "  اترك رسالتك وانتظر الرد "
 }

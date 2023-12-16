@@ -3,18 +3,24 @@ import Component from 'constants/Component';
 import LangChange from 'context/LangChange';
 import './style/App.scss';
 import FatchApi from 'context/FatchApi';
+import { Suspense, lazy } from 'react';
+const Home = lazy(() => import('pages/Home/Home'))
+const Connect = lazy(() => import('pages/Connect/Connect'))
+const Services = lazy(() => import('pages/services/Services'))
+const About = lazy(() => import('pages/About/About'))
+const Blogs = lazy(() => import('pages/Blogs/Blogs')) 
 
 function App() {
 
   const root = createBrowserRouter([
     {
       path: '/', element: <Component.Nagro />, children: [
-        { index: true, element: <Component.Home /> },
-        { path: '/contact-us', element: <Component.Connect /> },
-        { path: '/services', element: <Component.Services /> },
-        { path: '/about', element: <Component.About /> },
-        { path: '/blogs', element: <Component.Blogs /> },
-        { path: '*', element: <Component.NotFound /> },
+        { index: true, element: <Suspense  ><Home /></Suspense> },
+        { path: '/contact-us', element: <Suspense><Connect /> </Suspense> },
+        { path: '/services', element: <Suspense><Services /> </Suspense> },
+        { path: '/about', element: <Suspense><About /></Suspense> },
+        { path: '/blogs', element: <Suspense> <Blogs /></Suspense> },
+        { path: '*', element: <Component.NotFound />  },
       ]
     },
   ])

@@ -27,16 +27,19 @@
             line-height: normal;
             text-transform: capitalize;
             margin-top: 20px;
+
             @media screen and (width < 992px) {
-              text-align: center;
+                text-align: center;
             }
         }
 
         .app_footer_social {
             margin-top: 70px;
+
             @media screen and (width < 992px) {
                 margin-top: 20px;
-              }
+            }
+
             span {
                 color: #FFF;
                 font-family: $fontBase !important;
@@ -62,8 +65,9 @@
     .app_footer_call {
 
         @media screen and (width < 992px) {
-           margin-top: 0 !important;
-          }
+            margin-top: 0 !important;
+        }
+
         span {
             color: #FFF;
             font-family: $fontBase !important;
@@ -131,7 +135,7 @@
         .address_footer {
             span {
                 color: #FFF;
-                font-family: $fontBase !important ;
+                font-family: $fontBase !important;
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 400;
@@ -143,13 +147,16 @@
                 margin-top: 9px !important;
 
                 p {
-                    color: #C4AB73;
-                    font-family: $fontBase !important;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    text-transform: capitalize;
+                    span {
+                        color: #C4AB73;
+                        font-family: $fontBase !important;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        text-transform: capitalize;
+
+                    }
 
                     strong {
                         color: #C4AB73;

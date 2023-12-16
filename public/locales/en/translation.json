@@ -4,6 +4,23 @@
   "nav_about":"About us",
   "nav_service":"Servises",
   "nav_blogs":"Blogs",
-  "nav_connect":"Connect us"
+  "nav_connect":"Contact Us",
+  "nav_contact": "Let's talk ",
+  "footer_follow": "Follow us on",
+  "footer_contact": "Contact information",
+  "footer_address": "Address",
+  "contact_title": "keep in touch",
+  "name": "Name",
+  "email": "Email",
+  "phone": "Phone",
+  "reason": "Reason for contact",
+  "message": "Leave a message",
+  "submit": "Submit",
+  "placeholder_name": "enter your name",
+  "placeholder_email": "enter your email",
+  "placeholder_phone": "mobile phone number",
+  "placeholder_reason": "What is the reason for calling",
+  "placeholder_message": "Your Messange"
+
 
 }
