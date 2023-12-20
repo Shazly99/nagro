@@ -21,7 +21,7 @@
         p {
             color: #FFF;
             font-family: $fontBase !important;
-            font-size: 18px;
+            font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -74,8 +74,7 @@
             font-size: 20px;
             font-style: normal;
             font-weight: 400;
-            line-height: normal;
-            text-transform: capitalize;
+            line-height: normal; 
         }
 
         padding-right: 30px;
@@ -89,14 +88,13 @@
             }
 
             span {
-                color: #C4AB73;
-                text-align: right;
+                color: #C4AB73; 
                 font-family: $fontBase !important;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
-                text-transform: capitalize;
+       
                 cursor: pointer;
             }
         }
@@ -150,7 +148,7 @@
                     span {
                         color: #C4AB73;
                         font-family: $fontBase !important;
-                        font-size: 16px;
+                        font-size: 13px;
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;
@@ -171,4 +169,8 @@
             }
         }
     }
+}
+
+[dir="rtl"] .address_footer .item p span {
+    font-size: 16px !important;
 }

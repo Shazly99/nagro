@@ -47,14 +47,17 @@
             color: #FFF;
             text-align: center;
             font-family: $fontBase !important;
-            font-size: 24px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
             text-transform: capitalize;
+            width: 80%;
 
             @media screen and (width < 767px) {
                 font-size: 16px;
+                width: 100%;
+
             }
         }
     }
@@ -154,9 +157,9 @@
         color: #FFF;
         text-align: right;
         font-family: $fontBase !important;
-        font-size: 20px;
+        font-size: 30px;
         font-style: normal;
-        font-weight: 1000;
+        font-weight: 800;
         line-height: normal;
         text-transform: capitalize;
     }
@@ -172,7 +175,7 @@
 }
 
 
- .servicess_mt .service_1 {
+.servicess_mt .service_1 {
     border-right: none !important;
     border-top: none !important;
 
@@ -183,7 +186,7 @@
     }
 }
 
- .servicess_mt .service_2 {
+.servicess_mt .service_2 {
     border-top: none !important;
 
     @media screen and (width < 992px) {
@@ -199,7 +202,7 @@
 }
 
 // 990
- .servicess_mt .service_3 {
+.servicess_mt .service_3 {
     border-left: none !important;
     border-top: none !important;
 
@@ -208,6 +211,7 @@
         border-left: 1px solid #fff !important;
         border-right: none !important;
     }
+
     @media screen and (width < 767px) {
         border: none !important;
         border-bottom: 1px solid $mainColor !important;
@@ -215,13 +219,14 @@
     }
 }
 
- .servicess_mt .service_4 {
+.servicess_mt .service_4 {
     border-right: none !important;
     border-bottom: none !important;
-    
-    @media screen and (width < 992px) { 
+
+    @media screen and (width < 992px) {
         border-left: none !important;
     }
+
     @media screen and (width < 767px) {
         border: none !important;
         border-bottom: 1px solid $mainColor !important;
@@ -229,11 +234,13 @@
     }
 }
 
- .servicess_mt .service_5 {
+.servicess_mt .service_5 {
     border-bottom: none !important;
-    @media screen and (width < 992px) { 
+
+    @media screen and (width < 992px) {
         border-right: none !important;
     }
+
     @media screen and (width < 767px) {
         border: none !important;
         border-bottom: 1px solid $mainColor !important;
@@ -241,7 +248,7 @@
     }
 }
 
- .servicess_mt .service_6 {
+.servicess_mt .service_6 {
     border-bottom: none !important;
     border-left: none !important;
 
@@ -271,9 +278,11 @@
 [dir="ltr"] .servicess_mt .service_4 {
     border-left: none !important;
     border-bottom: none !important;
-    @media screen and (width < 992px) { 
+
+    @media screen and (width < 992px) {
         border-left: none !important;
     }
+
     @media screen and (width < 767px) {
         border: none !important;
         border-bottom: 1px solid $mainColor !important;
@@ -284,9 +293,10 @@
 [dir="ltr"] .servicess_mt .service_5 {
     border-bottom: none !important;
 
-    @media screen and (width < 992px) { 
+    @media screen and (width < 992px) {
         border-right: none !important;
     }
+
     @media screen and (width < 767px) {
         border: none !important;
         border-bottom: 1px solid $mainColor !important;
@@ -297,6 +307,7 @@
 [dir="ltr"] .servicess_mt .service_6 {
     border-bottom: none !important;
     border-right: none !important;
+
     @media screen and (width < 767px) {
         border: none !important;
         border-bottom: 1px solid $mainColor !important;

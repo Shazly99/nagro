@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
  
  $mainColor: #C4AB73;
- $mainBg: rgba(196, 171, 115, 0.17);;
+ $mainBg: rgba(196, 171, 115, 0.17);
 //overlay slider  background: rgba(25, 25, 25, 0.62);
  $white: white;
  $secondColor: #282828; 
@@ -86,5 +86,9 @@
     useEffect(() => {
         fetchCarsDetailsRef.current();
     }, [id]);
+
+      const htmlContent = '<p>This is <strong>HTML</strong> content.</p>';
+
+    <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
  */
 

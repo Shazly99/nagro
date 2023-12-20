@@ -1,44 +1,40 @@
 import cookies from 'js-cookie';
-import { createContext, useEffect, useState } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
 import { GetData } from 'utils/fetchData';
+import { LocalizationContext } from './LangChange';
 
 
 export const ApiContext = createContext([])
 
 function FatchApi({ children }) {
-    const url = `${process.env.REACT_APP_API_URL}/home`;
+    let { isLang } = useContext(LocalizationContext)
+    const url = `${process.env.REACT_APP_API_URL}/home/settings`;
     let header = {
         headers: {
-            'Content-Type': 'application/json', 
+            'Content-Type': 'application/json',
             'Accept-Language': cookies.get('i18next'),
         }
     }
 
-    const [data, setData] = useState(null)
+    const [settings, setSettings] = useState(null)
     const apiHome = () => {
-          GetData(url, header).then((data) => {
-              if (data?.status === 200) {
-                  console.log(data);
-
-                  setData(data)
-              }
-          })
+        GetData(url, header).then((data) => {
+            if (data?.status === 200) {
+                console.log(data?.data?.address);
+                setSettings(data?.data)
+            }
+        })
     }
     useEffect(() => {
         apiHome()
         return () => {
             apiHome()
         }
-    }, [cookies.get('i18next')])
-
-
-
-    
-
+    }, [isLang])
 
 
     return (
-        <ApiContext.Provider value={{data}}>
+        <ApiContext.Provider value={{ settings }}>
             {children}
         </ApiContext.Provider>
     )

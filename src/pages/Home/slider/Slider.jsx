@@ -1,13 +1,16 @@
 import img from 'constants/Img'
 import React from 'react'
 
-const Slider = () => {
+const Slider = ({ data }) => {
+
     return (
-        <div className='slider_overlay'>
-            <img src={img.slider} className='w-100' alt="" srcset="" />
+        <div className='slider_overlay vh-100'>
+            <img src={data?.slider} className='w-100 ' alt="slider"  />
             <div className="overlay"></div>
         </div>
     )
 }
 
 export default Slider
+
+ 

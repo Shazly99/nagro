@@ -10,6 +10,9 @@
   "footer_contact": "Contact information",
   "footer_address": "Address",
   "contact_title": "keep in touch",
+  "btn_more": "See more",
+  "btn_read_more": "Read more", 
+  "more_services": "Other services", 
   "name": "Name",
   "email": "Email",
   "phone": "Phone",
@@ -20,7 +23,13 @@
   "placeholder_email": "enter your email",
   "placeholder_phone": "mobile phone number",
   "placeholder_reason": "What is the reason for calling",
-  "placeholder_message": "Your Messange"
+  "placeholder_message": "Your Messange",
+  "about_contact1": "We are ready for your inquiries and legal advice",
+  "about_contact2": " Contact our team now!",
+  "about_qualifications":"Qualifications",
+  "about_owner":"Founding Partners  "
+
+
 
 
 }

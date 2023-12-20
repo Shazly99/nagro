@@ -1,25 +1,76 @@
+import { Player } from '@lottiefiles/react-lottie-player'
+import loader from 'assets/loader.json'
 import Component from 'constants/Component'
-import React, { useContext, useEffect } from 'react'
-import './home.scss'
+import { LocalizationContext } from 'context/LangChange'
+import cookies from 'js-cookie'
+import { useContext, useEffect, useState } from 'react'
+import { GetData } from 'utils/fetchData'
 import ServiceHome from './Service/ServiceHome'
-import { ApiContext } from 'context/FatchApi'
+import './home.scss'
 
 
 const Home = () => {
+  let { isLang } = useContext(LocalizationContext);
+
+ 
+  const url = `${process.env.REACT_APP_API_URL}/home`;
+  const [Loader, setLoader] = useState(false)
+  let header = {
+      headers: {
+          'Content-Type': 'application/json',
+          'Accept-Language': cookies.get('i18next'),
+      }
+  }
+
+  const [data, setData] = useState(null)
+  const apiHome = () => {
+      setLoader(false) 
+      GetData(url, header).then((data) => {
+          if (data?.status === 200) {
+              setData(data) 
+              setTimeout(() => {
+                  setLoader(true)
+              }, 1500);
+              setLoader(false)
+
+          }
+      })
+  }
+  useEffect(() => {
+      apiHome()
+      return () => {
+          apiHome()
+      }
+  }, [isLang])
   useEffect(() => {
     window.scroll(0, 0)
   }, [])
-
-  let { data } = useContext(ApiContext)
   return (
-    <div className=''>
-      <Component.Slider />
-      <Component.AboutHome />
-     <ServiceHome />
-       <Component.Why_us/>  
-    <Component.BlogHome/>
-    <Component.ClientsHome/>
-      <Component.ConnectHome/> 
+    <div className='position-relative'>
+      {
+        Loader === true ?
+          <>
+            <Component.Slider data={data}/>
+            <Component.AboutHome  data={data?.about_us}/>  
+            <ServiceHome dataHeader={data?.services} data={data?.services?.services}  />
+            <Component.Why_us dataHeader={data?.why_us}   data={data?.why_us?.why_us}/>
+            <Component.BlogHome   dataHeader={data?.blogs}   data={data?.blogs?.blogs}/>
+            <Component.ClientsHome data={data}/>
+            <Component.ConnectHome />
+          </> :
+
+          <div className='loader flex justify-content-center align-items-center'>
+            <div className="Player">
+              <Player
+                className='w-100'
+                // src="https://assets3.lottiefiles.com/packages/lf20_ZJR0xnKKys.json"
+                src={loader}
+                autoplay
+                loop
+              />
+            </div>
+          </div>
+      }
 
     </div>
   )

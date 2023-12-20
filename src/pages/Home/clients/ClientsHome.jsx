@@ -1,18 +1,16 @@
 import AOS from 'aos'
-import React, { useContext, useEffect, useState } from 'react'
+import img from 'constants/Img'
+import { ApiContext } from 'context/FatchApi'
+import { LocalizationContext } from 'context/LangChange'
+import { useContext, useEffect } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Slider from 'react-slick'
-import Component from 'constants/Component'
-import { LocalizationContext } from 'context/LangChange'
 import './style.scss'
-import { ApiContext } from 'context/FatchApi'
-import img from 'constants/Img';
 
 
-const ClientsHome = () => {
+const ClientsHome = ({data}) => {
 
-  let { isLang } = useContext(LocalizationContext);
-  let { data } = useContext(ApiContext);
+  let { isLang } = useContext(LocalizationContext); 
   const settings = {
     dots: false,
     infinite: true,
@@ -75,18 +73,15 @@ const ClientsHome = () => {
                     data-aos-duration="2000"
                     data-aos-easing="ease-out-cubic"
                   >
-                    {data?.clients?.section_title}  
-                   </h1>
+                    {data?.clients?.section_title}
+                  </h1>
 
-                  <p
-
+                  <p 
                     data-aos="flip-right"
                     data-aos-duration="2000"
                     data-aos-easing="ease-out-cubic"
                   >
-                {data?.clients?.section_content}  
- 
-
+                    {data?.clients?.section_content} 
                   </p>
                 </div>
 
@@ -98,16 +93,13 @@ const ClientsHome = () => {
                 data-aos-duration="1500"
                 data-aos-easing="ease-out-cubic">
                 <Slider {...settings} className='slider__feedback  '>
-                               {
+                  {
                     data?.clients?.clients?.map((item, index) => (
                       <div key={index} className='slider__item' >
                         <img width={150} height={90} className='shadow-lg' src={item?.image} alt="company" style={{ cursor: 'pointer', objectFit: 'contain', objectPosition: '50% 50%' }} />
                       </div>
                     ))
                   } 
-
-           
-
                 </Slider>
               </div>
             </Col>

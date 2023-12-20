@@ -10,6 +10,9 @@
   "footer_contact": "بيانات التواصل",
   "footer_address": "عنوان",
   "contact_title": "ابقي علي تواصل",
+  "btn_more": "رؤية المزيد",
+  "btn_read_more": "قراءة المزيد",
+  "more_services": "خدمات اخري", 
   "name": "الاسم",
   "email": "بريد الالكتروني",
   "phone": "رقم الجوال",
@@ -20,5 +23,10 @@
   "placeholder_email": "أدخل بريدك الإلكتروني",
   "placeholder_phone": "رقم الهاتف الجوال",
   "placeholder_reason": "ما سبب الاتصال",
-  "placeholder_message": "  اترك رسالتك وانتظر الرد "
+  "placeholder_message": "  اترك رسالتك وانتظر الرد ",
+  "about_contact1": "نحن مستعدون لاستفساراتكم و استشاراتكم القانونية  ",
+  "about_contact2": "تواصل مع فريقنا الآن !  ",
+  "about_qualifications":"المؤهلات",
+  "about_owner":"الشركاء المؤسسون  "
+
 }

@@ -1,10 +1,22 @@
 import Icons from 'constants/Icons'
 import img from 'constants/Img'
-import React from 'react'
+import { ApiContext } from 'context/FatchApi'
+import React, { useContext } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
-const AboutHome = () => {
+const AboutHome = ({ data }) => {
+  let { t } = useTranslation()
+  let BtnMore = () => (
+    <Link to={'/about'}>
+      <div className="btn_more  cursor-pointer user-select-none">
+        <span>{t('btn_more')}</span>
+        <Icons.ArrowMore className='mt-1' />
+      </div>
+    </Link>
+  )
+
   return (
     <div className='app_about mt-8 mb-8'>
 
@@ -12,19 +24,14 @@ const AboutHome = () => {
         <Row className='logo_bg_1th'>
           <Col xl={6} lg={6} md={12} sm={12} className='flex justify-content-center align-item-center '>
             <div className="logo_bg flex justify-content-center align-item-center border-right">
-              <img src={img.LogoBg} alt="" srcset="" />
+              <img src={data[0]?.image} alt="" srcset="" />
             </div>
           </Col>
           <Col xl={6} lg={6} md={12} sm={12} className="">
             <div className="content">
-              <span className='span_header'>مرحبا بكم في شركتنا </span>
-              <p>بدایة نتقدم إلى عملائنا الكرام بأسمى آیات التقدیر والامتنان على ثقتھم الغالیة ونود أن نشیر إلى أن ً شركتنا تُعد من الشركات الرائدة بما حققناه - بفضل الله تعالى – من نجاحات كبیرة في مجالات عملنا المتنوعة ً سواء مجال المحاماة والاستشارات القانونیة والاستشارات العمالیة والتحكیم وإعادة تنظیم وھیكلة إدارات الموارد البشریة وشئون الموظفین والأقسام التابعة لھا.</p>
-              <Link to={'/about'}>
-                <div className="btn_more  cursor-pointer user-select-none">
-                  <span>رؤية المزيد</span>
-                  <Icons.ArrowMore className='mt-1' />
-                </div> 
-              </Link>
+              <span className='span_header'>{data[0]?.title}</span>
+              <p>{data[0]?.description}</p>
+              <BtnMore />
             </div>
           </Col>
         </Row>
@@ -33,25 +40,21 @@ const AboutHome = () => {
           <Row>
             <Col xl={6} lg={6} md={12} sm={12}>
               <div className="content_th2">
-                <span className='span_header'>من نحن</span>
-                <p className='mt-3'>إننا نملك - بفضل الله تعالى – الشھادات العلمیة و الخبرات العملیة في مجالات المحاماة والاستشارات القانونیة والعمالیة والتحكیم والتوثیق والأنظمة المتعلقة بذلك. ویقوم عملنا على التطویر والارتقاء الدائم بمستوى منظومة العمل القانوني</p>
+                <span className='span_header'>{data[1]?.title}</span>
+                <p className='mt-3'>{data[1]?.description}</p>
               </div>
 
               <div className="content_th2 mt-50">
-                <span className='span_header'>رؤیتنا</span>
-                <p className='mt-3'>صناعة نموذج للتمیز والمصداقیة في قطاعات المحاماة والاستشارات القانونیة والعمالیة والتحكیم والتوثیق، من خلال كسب ثقة العملاء وتلبیة احتیاجاتھم وتجاوز تطلعاتھم وطموحاتھم.</p>
+                <span className='span_header'>{data[2]?.title}</span>
+                <p className='mt-3 mb-4'>{data[2]?.description}</p>
               </div>
-              <Link to={'/about'}>
-                <div className="btn_more  cursor-pointer user-select-none mt-5 ">
-                  <span>رؤية المزيد</span>
-                  <Icons.ArrowMore className='mt-1' />
-                </div>
-              </Link>
+              <BtnMore />
+
             </Col>
             <Col xl={6} lg={6} md={12} sm={12} className='flex justify-content-center align-item-center '>
               <div className="logo_bg_2th flex justify-content-center align-item-center position-relative ">
-                <img src={img.AboutImg2} alt="" className='w-75 z-1 object-fit-contain logo_bg_1th_img' />
-                <img src={img.AboutImg1} alt="" className='  z-0 me-auto position-absolute logo_bg_2th_img' />
+                <img src={data[2]?.image} alt="" className='border-round w-75 z-1 object-fit-contain logo_bg_1th_img' />
+                <img src={data[3]?.image} alt="" className='border-round  z-0 me-auto position-absolute logo_bg_2th_img' />
               </div>
             </Col>
           </Row>

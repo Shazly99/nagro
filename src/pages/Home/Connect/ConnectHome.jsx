@@ -137,7 +137,7 @@ const ConnectHome = () => {
                   </Form.Group>
                 </Col>
               </Row>
-              <Button size='small' iconPos={isLang === "en" ? "left" : 'right'} icon="pi pi-arrow-left" type={t('submit')} label='إرسال' className='rounded-2 mt-4 p-2 px-4' />
+              <Button size='small' iconPos={isLang === "en" ? "left" : 'right'} icon="pi pi-arrow-left" type='submit' label={t('submit')}  className='rounded-2 mt-4 p-2 px-4' />
             </Form>
 
           </Col>

@@ -1,6 +1,6 @@
 @import './varibale';
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
- 
+
 .modal-backdrop {
     z-index: 2 !important;
 }
@@ -194,4 +194,21 @@
 
 ul li::marker {
     color: $mainColor;
+}
+
+
+.loader {
+    position: absolute;
+    inset: 0;
+    background-color: rgba($color: #fff, $alpha: 0.95);
+    height: 100vh;
+    z-index: 99999999999999999999999999 !important;
+
+    .Player {
+        width: 250px !important;
+
+        @media screen and (width < 600px) {
+            width: 180px;
+        }
+    }
 }

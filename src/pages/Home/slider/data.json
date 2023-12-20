@@ -1,0 +1,128 @@
+{
+  "status": 200,
+  "slider": "https://naqro.rightclick.com.sa/public/images/home/11.jpg",
+  "about_us": [
+    {
+      "title": "The Quality",
+      "description": "We are interested in meeting the customer's wishes with appropriate dates and prices (variable according to the cost of raw materials) to produce according to international standards.",
+      "image": "https://naqro.rightclick.com.sa/public/images/about/1697507567.png"
+    },
+    {
+      "title": "Security",
+      "description": "We are interested in meeting the customer's wishes with appropriate dates and prices (variable according to the cost of raw materials) to produce according to international standards.",
+      "image": "https://naqro.rightclick.com.sa/public/images/about/1697507609.png"
+    }
+  ],
+  "services": {
+    "section_title": "Our Services",
+    "section_content": "We provide the integrated marketing services that help you reach your OKRs. our slogan is we help you click right away",
+    "services": [
+      {
+        "title": "Teaching Aids",
+        "description": "test",
+        "image": "https://naqro.rightclick.com.sa/public/images/services/1697502918.png"
+      },
+      {
+        "title": "Kindergarten Furniture",
+        "description": "dfg",
+        "image": "https://naqro.rightclick.com.sa/public/images/services/1697502962.png"
+      },
+      {
+        "title": "School Furniture",
+        "description": "rtyuuytrty",
+        "image": "https://naqro.rightclick.com.sa/public/images/services/1697503039.png"
+      },
+      {
+        "title": "External Sessions",
+        "description": "drtgjhjk",
+        "image": "https://naqro.rightclick.com.sa/public/images/services/1697503084.png"
+      },
+      {
+        "title": "Military Supplies Furniture",
+        "description": "gfhgjhjhk",
+        "image": "https://naqro.rightclick.com.sa/public/images/services/1697503278.png"
+      },
+      {
+        "title": "Furniture",
+        "description": "gfgfgfg",
+        "image": "https://naqro.rightclick.com.sa/public/images/services/1697503301.png"
+      },
+      {
+        "title": "Furniture2",
+        "description": "vnbjbm",
+        "image": "https://naqro.rightclick.com.sa/public/images/services/1697503390.png"
+      }
+    ]
+  },
+  "clients": {
+    "section_title": "Our Clients",
+    "section_content": "We are proud of our success partners and all the marketing services we delivered to them, each work adds a value of experience to Right Click.",
+    "clients": [
+      {
+        "image": "https://naqro.rightclick.com.sa/public/images/clients/1697341030.jpg"
+      },
+      {
+        "image": "https://naqro.rightclick.com.sa/public/images/clients/1697341111.png"
+      },
+      {
+        "image": "https://naqro.rightclick.com.sa/public/images/clients/1697341205.png"
+      },
+      {
+        "image": "https://naqro.rightclick.com.sa/public/images/clients/1697341329.png"
+      },
+      {
+        "image": "https://naqro.rightclick.com.sa/public/images/clients/1697341380.png"
+      },
+      {
+        "image": "https://naqro.rightclick.com.sa/public/images/clients/1697341456.png"
+      }
+    ]
+  },
+  "why_us": {
+    "section_title": "Our Projects",
+    "section_content": "You can see our experience through our work, +200 projects has been successfully accomplished by our marketing services, solution, and campaigns within 10 years full of hard work and achievements.",
+    "why_us": [
+      {
+        "id": 3,
+        "title": "Credibility",
+        "description": "We are interested in meeting the customer's wishes with appropriate dates and prices (variable according to the cost of raw materials) to produce according to international standards.",
+        "icon": "https://naqro.rightclick.com.sa/public/images/why_us/1697507567.png",
+        "image": "https://naqro.rightclick.com.sa/public/images/why_us/1697507521.png"
+      },
+      {
+        "id": 4,
+        "title": "The Quality",
+        "description": "We are interested in meeting the customer's wishes with appropriate dates and prices (variable according to the cost of raw materials) to produce according to international standards.",
+        "icon": "https://naqro.rightclick.com.sa/public/images/why_us/1697507609.png",
+        "image": "https://naqro.rightclick.com.sa/public/images/why_us/1697507567.png"
+      },
+      {
+        "id": 5,
+        "title": "Security",
+        "description": "We are interested in meeting the customer's wishes with appropriate dates and prices (variable according to the cost of raw materials) to produce according to international standards.",
+        "icon": "https://naqro.rightclick.com.sa/public/images/why_us/1697507567.png",
+        "image": "https://naqro.rightclick.com.sa/public/images/why_us/1697507609.png"
+      }
+    ]
+  },
+  "blogs": {
+    "section_title": "Blogs",
+    "section_content": "Our Latest Blogs & News",
+    "blogs": [
+      {
+        "id": 8,
+        "title": "Annual leave provisions in the Saudi labor system",
+        "description": "Mohid: With the aim of facilitating and simplifying the presentation of the provisions of annual leave and the related rules",
+        "image": "https://naqro.rightclick.com.sa/public/images/blogs/1702742113.png",
+        "date": "2023-12-16T15:55:13.000000Z"
+      },
+      {
+        "id": 9,
+        "title": "1",
+        "description": "3",
+        "image": "https://naqro.rightclick.com.sa/public/images/blogs/1702742971.png",
+        "date": "2023-12-16T16:09:31.000000Z"
+      }
+    ]
+  }
+}
