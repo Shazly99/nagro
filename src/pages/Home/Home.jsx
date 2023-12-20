@@ -10,9 +10,8 @@ import './home.scss'
 
 
 const Home = () => {
-  let { isLang } = useContext(LocalizationContext);
-
- 
+  let { isLang } = useContext(LocalizationContext); 
+  
   const url = `${process.env.REACT_APP_API_URL}/home`;
   const [Loader, setLoader] = useState(false)
   let header = {

@@ -26,21 +26,36 @@ const Footer = () => {
               <div className="app_footer_social">
                 <span>{t('footer_follow')}</span>
                 <div className="icons flex flex-row gap-4 justify-content- mt-4 align-items-center">
-                  <a href={settings?.instagram} target="_blank" rel="noopener noreferrer">
-                    <Instagram color={'#C4AB73'} />
-                  </a>
-                  <a href={settings?.linked_in} target="_blank" rel="noopener noreferrer">
-                    <Linkedin color={'#C4AB73'} />
-                  </a>
-                  <a href={settings?.twitter} target="_blank" rel="noopener noreferrer">
-                    <Twitter color={'#C4AB73'} />
-                  </a>
-                  <a href={settings?.facebook} target="_blank" rel="noopener noreferrer">
-                    <Facebook color={'#C4AB73'} />
-                  </a>
-                  <a href={`https://wa.me/${settings?.whats}`} target="_blank" rel="noopener noreferrer">
-                    <Icons.Whatsapp />
-                  </a>
+                  {
+                    settings?.instagram &&
+                    <a href={settings?.instagram} target="_blank" rel="noopener noreferrer">
+                      <Instagram color={'#C4AB73'} />
+                    </a>
+                  }
+                  {
+                    settings?.linked_in &&
+                    <a href={settings?.linked_in} target="_blank" rel="noopener noreferrer">
+                      <Linkedin color={'#C4AB73'} />
+                    </a>
+                  }
+                  {
+                    settings?.twitter &&
+                    <a href={settings?.twitter} target="_blank" rel="noopener noreferrer">
+                      <Twitter color={'#C4AB73'} />
+                    </a>
+                  }
+                  {
+                    settings?.facebook &&
+                    <a href={settings?.facebook} target="_blank" rel="noopener noreferrer">
+                      <Facebook color={'#C4AB73'} />
+                    </a>
+                  }
+                  {
+                    settings?.whats &&
+                    <a href={`https://wa.me/${settings?.whats}`} target="_blank" rel="noopener noreferrer">
+                      <Icons.Whatsapp />
+                    </a>
+                  }
                 </div>
               </div>
             </Col>
@@ -49,6 +64,7 @@ const Footer = () => {
                 <Nav className={`  flex justify-content-center gap-3 w-100 `}>
                   <Nav.Link as={Link} to='/' className={` ${location.pathname === '/' ? 'active' : 'text-light'}`}>{t('nav_home')}</Nav.Link>
                   <Nav.Link as={Link} to='/about' className={`  ${location.pathname === '/about' ? 'active' : 'text-light'}`}>{t('nav_about')} </Nav.Link>
+                  <Nav.Link as={Link} to='/clients' className={`  ${location.pathname === '/clients' ? 'active' : 'text-light'}`}>{t('nav_clients')} </Nav.Link>
                   <Nav.Link as={Link} to='/services' className={`  ${location.pathname === '/services' ? 'active' : 'text-light'}`}>{t('nav_service')} </Nav.Link>
                   <Nav.Link as={Link} to='/blogs' className={`  ${location.pathname === '/blogs' ? 'active' : 'text-light'}`}>{t('nav_blogs')} </Nav.Link>
                   <Nav.Link as={Link} to='/contact-us' className={`  ${location.pathname === '/contact-us' ? 'active' : 'text-light'}`}> {t('nav_connect')} </Nav.Link>
@@ -62,7 +78,7 @@ const Footer = () => {
                 <span> {t('footer_address')} </span>
                 <div className="item">
                   {
-                    settings?.address.map((item, index) => (
+                    settings?.address?.map((item, index) => (
                       <p key={index} className='flex gap-2 align-items-center'>
                         <strong>{item?.city}: </strong>  <span >{item?.address}</span>
                       </p>

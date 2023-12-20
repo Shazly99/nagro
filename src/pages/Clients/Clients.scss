@@ -1,0 +1,8 @@
+@import '../../style/varibale';
+.app_clients{
+    .header_banner{
+        .overlay {
+            background-color: rgba($color: $dark, $alpha: 0.4) !important;
+        }
+    }
+}

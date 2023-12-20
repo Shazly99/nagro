@@ -11,6 +11,7 @@ const Services = lazy(() => import('pages/services/Services'))
 const About = lazy(() => import('pages/About/About'))
 const Blogs = lazy(() => import('pages/Blogs/Blogs'))
 const BlogsDetails = lazy(() => import('pages/Blogs/BlogsDetails'))
+const Clients = lazy(() => import('pages/Clients/Clients')) 
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         { path: '/contact-us', element: <Suspense><Connect /> </Suspense> },
         { path: '/services', element: <Suspense><Services /> </Suspense> },
         { path: '/about', element: <Suspense><About /></Suspense> }, 
+        { path: '/clients', element: <Suspense><Clients /></Suspense> }, 
         {
           path: '/blogs', children: [
             { index: true, element: <Suspense><Blogs /></Suspense> },
