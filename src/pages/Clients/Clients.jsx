@@ -2,13 +2,13 @@ import { Player } from '@lottiefiles/react-lottie-player'
 import loader from 'assets/loader.json'
 import img from 'constants/Img'
 import { LocalizationContext } from 'context/LangChange'
+import { motion } from 'framer-motion'
 import cookies from 'js-cookie'
 import { useContext, useEffect, useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import { GetData } from 'utils/fetchData'
 import './Clients.scss'
-import { motion } from 'framer-motion';
 const Clients = () => {
     let { isLang } = useContext(LocalizationContext);
 

@@ -23,8 +23,8 @@ const ServiceHome = ({ dataHeader, data }) => {
                   <div className="icons">
                     <img src={item.image} className='w-100' alt="" srcset="" />
                   </div>
-                  <span>{item?.title}</span>
-                  <p>{item?.description}</p>
+                  <span>{item?.short_title}</span>
+                  <p>{item?.short_description}</p>
                   <Link to={'/services'}>
                     <div className="btn_more  cursor-pointer user-select-none">
                       <span>{t('btn_read_more')}</span>
