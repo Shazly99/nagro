@@ -178,3 +178,46 @@
         text-transform: capitalize;
     }
 }
+
+
+.blog_details_data {
+    h3 {
+        color: #383B52;
+        font-family: Cairo;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+
+    span {
+        color: #C4AB73;
+        font-family: Cairo;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+
+    p {
+        color: #282828;
+        text-align: right;
+        font-family: Cairo;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 77px;
+        /* 320.833% */
+        text-transform: capitalize;
+    }
+
+
+    ul{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

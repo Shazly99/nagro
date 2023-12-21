@@ -12,6 +12,7 @@ import { useParams } from 'react-router-dom'
 import { GetData } from 'utils/fetchData'
 import './blog.scss'
 import { Button } from 'primereact/button';
+import { Row } from 'react-bootstrap';
 
 
 const BlogsDetails = () => {
@@ -56,7 +57,7 @@ const BlogsDetails = () => {
 
     <div className='position-relative'>
 
-      {/* 
+
       {
         Loader === true ?
           <div className='app_blogs  mb-7'>
@@ -81,9 +82,8 @@ const BlogsDetails = () => {
                       <span>{format(parseISO(data?.date), 'd MMMM, yyyy', { locale: ar })}</span>
                   }
                 </div>
-                <div dangerouslySetInnerHTML={{ __html: data?.description }} />
+                <div className='blog_details_data' dangerouslySetInnerHTML={{ __html: data?.description }} /> 
 
-         
               </Row>
             </div>
           </div> :
@@ -98,11 +98,11 @@ const BlogsDetails = () => {
               />
             </div>
           </div>
-      } */}
-      <div className="card mt-8 p-8">
+      }
+      {/* <div className="card mt-8 p-8">
         <Editor value={text} onTextChange={(e) => setText(e.htmlValue)} style={{ height: '320px' }} />
-      <Button onClick={()=>console.log(text)}>aaa</Button>
-      </div>
+        <Button onClick={() => console.log(text)}>aaa</Button>
+      </div> */}
     </div>
   )
 }
