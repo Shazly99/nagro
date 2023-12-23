@@ -462,10 +462,25 @@
 } 
 
 .div_ul{
+    p:first{
+        font-size: 18px !important;
+    }
+    p:not(:first-child){
+        color: #C4AB73 !important;
+        font-size: 16px !important;
+
+    }
     ul{
         margin-top: 20px;
         display: flex;
         flex-direction: column;
         gap: 10px;
+    }
+}
+
+.our_mission{
+    p{
+        padding: 0 !important;
+        margin-top: 20px !important;
     }
 }

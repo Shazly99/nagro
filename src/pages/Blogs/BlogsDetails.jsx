@@ -17,8 +17,7 @@ import { Row } from 'react-bootstrap';
 
 const BlogsDetails = () => {
   let { isLang } = useContext(LocalizationContext);
-  let { id } = useParams();
-  const [text, setText] = useState('');
+  let { id } = useParams(); 
   let { t } = useTranslation()
   const url = `${process.env.REACT_APP_API_URL}/blogs/${id}`;
   const [Loader, setLoader] = useState(false)

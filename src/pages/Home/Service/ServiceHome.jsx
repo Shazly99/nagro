@@ -19,11 +19,11 @@ const ServiceHome = ({ dataHeader, data }) => {
           {
             data?.slice(0,5)?.map((item, index) => (
               <Col key={index} xl={4} lg={4} md={6} sm={12} className={`${index + 1 > 3 ? 'p-2' : 'mt-2 '}  border service_${index + 1}`}>
-                <div className="services_content p-4 py-6">
+                <div className="services_content flex flex-column justify-content-between h-100 p-4 py-6">
                   <div className="icons">
                     <img src={item.image} className='w-100' alt="" srcset="" />
-                  </div>
-                  <span>{item?.short_title}</span>
+                  </div> 
+                  <span>{item?.short_title.split(' ')?.slice(0,4).join(' ')}</span>
                   <p>{item?.short_description}</p>
                   <Link to={'/services'}>
                     <div className="btn_more  cursor-pointer user-select-none">
@@ -42,9 +42,7 @@ const ServiceHome = ({ dataHeader, data }) => {
                 <Icons.ArrowLg />
               </div>
             </Link>
-
           </Col>
-
         </Row>
       </section>
     </div>

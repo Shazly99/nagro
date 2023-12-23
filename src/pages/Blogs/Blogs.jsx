@@ -85,9 +85,9 @@ const Blogs = () => {
                         </div>
                         <div className="blog_info shadow-2">
                           <span className='title'>{item?.title}</span>
-                          <p>{item?.description}</p>
+                          <p>{item?.short_description?.split(' ')?.slice(0,20).join(' ')}</p>
                           <Link to={`/blogs/details/${item?.id}`}>
-                            <div className="btn_more  cursor-pointer user-select-none">
+                            <div className="btn_more  cursor-pointer user-select-none flex gap-1  align-items-center">
                               <span>{t('btn_read_more')}</span>
                               <Icons.ArrowMore className='mt-1' />
                             </div>

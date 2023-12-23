@@ -17,7 +17,7 @@ const Footer = () => {
   let { settings } = useContext(ApiContext)
   return (
     <>
-      <div className="app_footer">
+      <div className="app_footer overflow-hidden">
         <div className="app_footer_container">
           <Row>
             <Col xl={3n} lg={3n} md={6} sm={12} className='app_footer_content ' >

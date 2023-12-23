@@ -70,6 +70,9 @@
         }
 
         .services_content {
+            // display: flex !important;
+            // flex-direction: column !important;
+            // justify-content: space-between !important;
             @media screen and (width < 767px) {
                 padding-left: 0 !important;
                 padding-right: 0 !important;

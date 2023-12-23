@@ -41,12 +41,13 @@ const AboutHome = ({ data }) => {
             <Col xl={6} lg={6} md={12} sm={12}>
               <div className="content_th2">
                 <span className='span_header'>{data[1]?.title}</span>
-                <p className='mt-3'>{data[1]?.description}</p>
+                <div className='mt-3' dangerouslySetInnerHTML={{ __html: data[1]?.description }} />
               </div>
 
               <div className="content_th2 mt-50">
-                <span className='span_header'>{data[2]?.title}</span>
-                <p className='mt-3 mb-4'>{data[2]?.description}</p>
+                <span className='span_header'>{data[2]?.title}</span> 
+                <div className='mt-3 mb-4' dangerouslySetInnerHTML={{ __html: data[2]?.description }} />
+
               </div>
               <BtnMore />
 
