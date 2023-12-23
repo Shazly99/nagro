@@ -72,8 +72,9 @@ const About = () => {
                       <span className='div_ul' dangerouslySetInnerHTML={{ __html: data?.about_us[3]?.description }} />
                     </div>
                   </Col>
-                  <Col xl={4} lg={4} md={4} sm={12}>
-                    <img src={img.About1} alt="" className='w-100 p-2' />
+                  <Col xl={4} lg={4} md={4} sm={12}> 
+                    <img src={data?.about_us[5]?.image} alt="" className='w-100 p-2' />
+
                   </Col>
                 </Row>
               </div>
