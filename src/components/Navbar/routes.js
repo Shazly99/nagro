@@ -17,16 +17,22 @@ const routes = [
 
     {
         path: "/blogs",
-        nameEn: "Our blogs",
+        nameEn: "  blogs",
         nameAr: "الاخبار و المقالات",
         icon: <i className='pi pi-home'></i>,
     },
 
     {
         path: "/services",
-        nameEn: "Our Services",
+        nameEn: "  Services",
         nameAr: "خدماتنا",
         icon: <i className='pi pi-home'></i>,
+    },
+    {
+        path: "/clients",
+        nameEn: "  Clients",
+        nameAr: "عملائنا",
+        icon: <i className='pi pi-users'></i>,
     },
     {
         path: "/contact-us",
