@@ -139,8 +139,10 @@
         inset: 0;
         background-color: #0000008C;
 
-        .content{
-            // background-color: red;
+        .content{ 
+            svg{
+                width: 100% !important;
+            }
         }
     }
 }
