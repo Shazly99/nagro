@@ -10,6 +10,7 @@ import { ReactComponent as Whatsapp } from 'assets/SVG/whatsapp.svg';
 import { ReactComponent as Email } from 'assets/SVG/email.svg';
 import { ReactComponent as Call } from 'assets/SVG/Call outline.svg';
 import { ReactComponent as Home } from 'assets/SVG/Home Outline.svg';
+import { ReactComponent as sliderCenter } from 'assets/Images/sliderCenter.svg';
 
 const Icons = {
     LangOutline,
@@ -21,7 +22,8 @@ const Icons = {
     Map,Whatsapp,
     Email,
     Call,
-    Home
+    Home,
+    sliderCenter
 }
 
 export default Icons;
