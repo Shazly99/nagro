@@ -137,7 +137,11 @@
     .overlay {
         position: absolute;
         inset: 0;
-        background-color: $mainBg;
+        background-color: #0000008C;
+
+        .content{
+            // background-color: red;
+        }
     }
 }
 
