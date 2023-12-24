@@ -9,6 +9,7 @@ i18next.use(HttpApi)
     .init({
         supportedLngs: [  'en', 'ar'],
         fallbackLng: 'ar',
+        lng: 'ar',
         debug: false,
         // Options for language detector
         detection: {
