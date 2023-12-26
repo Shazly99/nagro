@@ -5,6 +5,7 @@ import './style/App.scss';
 import FatchApi from 'context/FatchApi';
 import { Suspense, lazy } from 'react'; 
 import Compositions from 'pages/Compositions/Compositions';
+import CompositionsDetails from 'pages/Compositions/CompositionsDetails';
 
 const Home = lazy(() => import('pages/Home/Home'))
 const Connect = lazy(() => import('pages/Connect/Connect'))
@@ -29,6 +30,13 @@ function App() {
           path: '/blogs', children: [
             { index: true, element: <Suspense><Blogs /></Suspense> },
             { path: 'details/:id', element: <Suspense><BlogsDetails /></Suspense> }
+          ]
+        },
+
+        {
+          path: '/compositions', children: [
+            { index: true, element: <Suspense><Compositions /></Suspense> },
+            { path: 'details/:id', element: <Suspense><CompositionsDetails /></Suspense> }
           ]
         },
         { path: '*', element: <Component.NotFound /> },

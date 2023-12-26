@@ -52,7 +52,7 @@ const Clients = () => {
                 Loader === true ?
                     <div className='app_clients overflow-hidden '>
                         <div className="header_banner  overflow-hidden" style={{ marginTop: '90px' }}>
-                            <img src={img.Clients} alt="banner" className='w-100' srcset="" />
+                            <img src={img.Clients} alt="banner" className='w-100'  />
                             <div className="overlay">
                                 <div className="header">
                                     <span>{ data?.section_title}</span>

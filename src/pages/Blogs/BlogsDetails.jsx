@@ -5,14 +5,12 @@ import { LocalizationContext } from 'context/LangChange'
 import { format, parseISO } from 'date-fns'
 import { ar } from 'date-fns/locale'
 import cookies from 'js-cookie'
-import { Editor } from "primereact/editor"
 import { useContext, useEffect, useState } from 'react'
+import { Row } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import { useParams } from 'react-router-dom'
 import { GetData } from 'utils/fetchData'
 import './blog.scss'
-import { Button } from 'primereact/button';
-import { Row } from 'react-bootstrap';
 
 
 const BlogsDetails = () => {
@@ -61,7 +59,7 @@ const BlogsDetails = () => {
         Loader === true ?
           <div className='app_blogs  mb-7'>
             <div className="header_banner " style={{ marginTop: '0px' }}>
-              <img src={img.header} alt="banner" className='w-100' srcset="" />
+              <img src={img.header} alt="banner" className='w-100'  />
               <div className="overlay">
                 <div className="header">
                   <span>{data?.short_title}</span>

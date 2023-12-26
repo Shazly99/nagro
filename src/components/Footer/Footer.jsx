@@ -72,7 +72,7 @@ const Footer = () => {
               </div>
               <div className="location_map mt-5">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14836.994644211562!2d39.116845!3d21.615232!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3db337d8cdedb%3A0x24094293cd97da6e!2z2LTYsdmD2Kkg2LfZhNi52Kog2LnYqNiv2KfZhNix2K3ZitmFINmG2KfZgtix2Ygg2YjZhdi52KrYsiDYt9mE2LnYqiDZhtin2YLYsdmIINmE2YTZhdit2KfZhdin2Kkg2YjYp9mE2KfYs9iq2LTYp9ix2KfYqiDYp9mE2YLYp9mG2YjZhtmK2Kk!5e0!3m2!1sen!2seg!4v1702369787309!5m2!1sen!2seg"
-                  width="100%" height="240px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  width="100%" height="240px"   loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
               <div className="address_footer mt-4" >
                 <span> {t('footer_address')} </span>

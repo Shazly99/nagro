@@ -57,7 +57,7 @@ const Blogs = () => {
         Loader === true ?
           <div className='app_blogs'>
             <div className="header_banner " style={{ marginTop: '90px' }}>
-              <img src={img.header} alt="banner" className='w-100' srcset="" />]
+              <img src={img.header} alt="banner" className='w-100'  />]
               <div className="overlay">
                 <div className="header">
                   <span>{data?.section_title}</span>

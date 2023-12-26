@@ -147,7 +147,7 @@ const NavBar = ({ navbarColor }) => {
                                             <img src={img.LogoSm} style={{ width: '50px', height: '50px' }} alt="" className='rotateLogo' />
                                         </div> :
                                         <div className="nav_logo_lg   flex  justifyalign-content-center  align-items-center">
-                                            <img src={img.Logo} alt="" srcset="" />
+                                            <img src={img.Logo} alt=""  />
                                         </div>
                                     }
 
