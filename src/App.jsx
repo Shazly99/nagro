@@ -4,6 +4,7 @@ import LangChange from 'context/LangChange';
 import './style/App.scss';
 import FatchApi from 'context/FatchApi';
 import { Suspense, lazy } from 'react'; 
+import Compositions from 'pages/Compositions/Compositions';
 
 const Home = lazy(() => import('pages/Home/Home'))
 const Connect = lazy(() => import('pages/Connect/Connect'))
@@ -23,6 +24,7 @@ function App() {
         { path: '/services', element: <Suspense><Services /> </Suspense> },
         { path: '/about', element: <Suspense><About /></Suspense> }, 
         { path: '/clients', element: <Suspense><Clients /></Suspense> }, 
+        { path: '/compositions', element: <Suspense><Compositions /></Suspense> }, 
         {
           path: '/blogs', children: [
             { index: true, element: <Suspense><Blogs /></Suspense> },

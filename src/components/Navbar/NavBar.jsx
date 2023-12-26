@@ -136,6 +136,7 @@ const NavBar = ({ navbarColor }) => {
                                     <Nav className={`${cookies.get('i18next') === "en" ? 'dropdown_en' : 'dropdown_ar'}`}>
                                         <Nav.Link as={Link} to='/contact-us' className={`  ${location.pathname === '/contact-us' ? 'active' : 'text-light'}`}> {t('nav_connect')} </Nav.Link>
                                         <Nav.Link as={Link} to='/blogs' className={`  ${location.pathname === '/blogs' ? 'active' : 'text-light'}`}>{t('nav_blogs')} </Nav.Link>
+                                        <Nav.Link as={Link} to='/compositions' className={`  ${location.pathname === '/compositions' ? 'active' : 'text-light'}`}>{t('nav_work')} </Nav.Link>
                                         <Nav.Link as={Link} to='/clients' className={`  ${location.pathname === '/clients' ? 'active' : 'text-light'}`}>{t('nav_clients')} </Nav.Link>
                                         <Nav.Link as={Link} to='/services' className={`  ${location.pathname === '/services' ? 'active' : 'text-light'}`}>{t('nav_service')} </Nav.Link>
                                         <Nav.Link as={Link} to='/about' className={`  ${location.pathname === '/about' ? 'active' : 'text-light'}`}>{t('nav_about')} </Nav.Link>

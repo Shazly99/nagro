@@ -140,6 +140,8 @@
         background-color: #0000008C;
 
         .content{ 
+            width: 900px !important;
+
             svg{
                 width: 100% !important;
             }
@@ -206,7 +208,7 @@ ul li::marker {
 .loader {
     position: absolute;
     inset: 0;
-    background-color: rgba($color: #fff, $alpha: 0.95);
+    background-color: rgba($color: $secondColor, $alpha: 1);
     height: 100vh;
     z-index: 99999999999999999999999999 !important;
 

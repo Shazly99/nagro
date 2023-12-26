@@ -16,9 +16,9 @@ const routes = [
     },
 
     {
-        path: "/blogs",
-        nameEn: "  blogs",
-        nameAr: "الاخبار و المقالات",
+        path: "/compositions",
+        nameEn: "Our Compositions",
+        nameAr: "مؤلفاتنا",
         icon: <i className='pi pi-home'></i>,
     },
 
