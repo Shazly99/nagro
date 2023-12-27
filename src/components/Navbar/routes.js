@@ -13,14 +13,7 @@ const routes = [
         nameEn: "about Us",
         nameAr: "نبذة عنا",
         icon: <i className='pi pi-home'></i>,
-    },
-
-    {
-        path: "/compositions",
-        nameEn: "Our Compositions",
-        nameAr: "مؤلفاتنا",
-        icon: <i className='pi pi-home'></i>,
-    },
+    }, 
 
     {
         path: "/services",
@@ -34,6 +27,19 @@ const routes = [
         nameAr: "عملائنا",
         icon: <i className='pi pi-users'></i>,
     },
+    {
+        path: "/compositions",
+        nameEn: "Our Compositions",
+        nameAr: "مؤلفاتنا",
+        icon: <i className='pi pi-home'></i>,
+    },
+    {
+        path: "/blogs",
+        nameEn: "Blogs",
+        nameAr: "المقالات",
+        icon: <i className='pi pi-home'></i>,
+    },
+
     {
         path: "/contact-us",
         nameEn: "Contact Us ",

@@ -7,6 +7,7 @@ import { useContext, useEffect, useState } from 'react'
 import { GetData } from 'utils/fetchData'
 import ServiceHome from './Service/ServiceHome'
 import './home.scss'
+import img from 'constants/Img'
 
 
 const Home = () => {
@@ -60,13 +61,7 @@ const Home = () => {
 
           <div className='loader flex justify-content-center align-items-center'>
             <div className="Player">
-              <Player
-                className='w-100'
-                // src="https://assets3.lottiefiles.com/packages/lf20_ZJR0xnKKys.json"
-                src={loader}
-                autoplay
-                loop
-              />
+              <img src={img.Logo} width={250} alt="" srcset="" />
             </div>
           </div>
       }

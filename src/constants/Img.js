@@ -7,7 +7,7 @@ import banner_services from 'assets/Images/banner_services.png'
 import Clients from 'assets/Images/clients.png'
 import header from 'assets/Images/header.png'
 import Logo from 'assets/Images/logo.png'
-import LogoBg from 'assets/Images/logoBg.png'
+import LogoBg from 'assets/Images/logo.png'
 import LogoSm from 'assets/Images/logo_sm.png'
 
 
