@@ -210,7 +210,7 @@ ul li::marker {
     inset: 0;
     background-color: rgba($color: $secondColor, $alpha: 1);
     height: 100vh;
-    z-index: 99999999999999999999999999 !important;
+    z-index: 99999999999999999 !important;
 
     .Player {
         width: 250px !important;

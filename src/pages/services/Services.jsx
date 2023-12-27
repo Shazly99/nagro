@@ -74,7 +74,7 @@ const Services = () => {
                           </div>
                         </div>
                       </Col>
-                      <Col xl={8} lg={8} md={6} sm={12} className='app_serives_content '> 
+                      <Col xl={8} lg={8} md={6} sm={12} className='app_serives_content '>
                         <div className='div_ul' dangerouslySetInnerHTML={{ __html: item?.description }} />
                       </Col>
                     </Row>
@@ -87,13 +87,7 @@ const Services = () => {
           :
           <div className='loader flex justify-content-center align-items-center'>
             <div className="Player">
-              <Player
-                className='w-100'
-                // src="https://assets3.lottiefiles.com/packages/lf20_ZJR0xnKKys.json"
-                src={loader}
-                autoplay
-                loop
-              />
+              <img src={img.Logo} width={250} alt="" srcset="" />
             </div>
           </div>
       }

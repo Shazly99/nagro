@@ -85,14 +85,8 @@ const BlogsDetails = () => {
             </div>
           </div> :
           <div className='loader flex justify-content-center align-items-center'>
-            <div className="Player">
-              <Player
-                className='w-100'
-                // src="https://assets3.lottiefiles.com/packages/lf20_ZJR0xnKKys.json"
-                src={loader}
-                autoplay
-                loop
-              />
+    <div className="Player">
+              <img src={img.Logo} width={250} alt="" srcset="" />
             </div>
           </div>
       }

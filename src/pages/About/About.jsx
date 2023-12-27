@@ -54,7 +54,7 @@ const About = () => {
         Loader === true ?
           <div className='master_about overflow-hidden'>
             <div className="header_banner " style={{ marginTop: '90px' }}>
-              <img src={img.banner_about} alt="banner" className='w-100'  />]
+              <img src={img.banner_about} alt="banner" className='w-100' />]
               <div className="overlay">
                 <div className="header">
                   <span>{t('nav_about')}</span>
@@ -72,7 +72,7 @@ const About = () => {
                       <span className='div_ul' dangerouslySetInnerHTML={{ __html: data?.about_us[3]?.description }} />
                     </div>
                   </Col>
-                  <Col xl={4} lg={4} md={4} sm={12}> 
+                  <Col xl={4} lg={4} md={4} sm={12}>
                     <img src={data?.about_us[5]?.image} alt="" className='w-100 p-2' />
 
                   </Col>
@@ -85,12 +85,12 @@ const About = () => {
                   <div className="app_about_1th p-5">
                     <div className="title shadow-lg">
                       <span>{data?.about_us[2]?.title}</span>
-                    </div> 
-                    <div  dangerouslySetInnerHTML={{ __html: data?.about_us[2]?.description }} />
+                    </div>
+                    <div dangerouslySetInnerHTML={{ __html: data?.about_us[2]?.description }} />
 
                   </div>
                 </Col>
-                
+
                 <Col xl={6} lg={6} md={6} sm={12} className='mt-5'>
                   <div className="app_about_2th p-5">
                     <div className="title shadow-lg">
@@ -136,7 +136,7 @@ const About = () => {
                           <div className="owner_desc flex align-items-center h-100 justify-content-center flex-column">
                             <img src={data?.contributors[0]?.image} alt="" className='w-75 owner_desc_img' />
                             <div className="jop_title flex flex-row align-items-center bg-light gap-3 w-27rem rounded-3 shadow-3 p-2">
-                              <img src={data?.contributors[0]?.image} alt=""  width={100} />
+                              <img src={data?.contributors[0]?.image} alt="" width={100} />
                               <div className="info">
                                 <span>{data?.contributors[0]?.name}</span>
                                 <p>{data?.contributors[0]?.experience}</p>
@@ -175,7 +175,7 @@ const About = () => {
                           <img src={data?.contributors[1]?.image} alt="" className='w-75 owner_desc_img' />
 
                           <div className="jop_title flex flex-row align-items-center bg-light gap-3 w-27rem  rounded-3 shadow-3 p-2">
-                            <img src={data?.contributors[1]?.image} alt=""  width={100} />
+                            <img src={data?.contributors[1]?.image} alt="" width={100} />
 
                             <div className="info  ">
                               <span>{data?.contributors[1]?.name}</span>
@@ -217,13 +217,7 @@ const About = () => {
 
           <div className='loader flex justify-content-center align-items-center'>
             <div className="Player">
-              <Player
-                className='w-100'
-                // src="https://assets3.lottiefiles.com/packages/lf20_ZJR0xnKKys.json"
-                src={loader}
-                autoplay
-                loop
-              />
+              <img src={img.Logo} width={250} alt="" srcset="" />
             </div>
           </div>
       }

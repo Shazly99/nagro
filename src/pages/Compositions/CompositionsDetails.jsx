@@ -79,7 +79,7 @@ const CompositionsDetails = () => {
                         <div className="app_blog_container mt-5">
                             <Row className='app_blogs_details'>
                                 <div className="header flex justify-content-between align-items-center">
-                                    <h3>{data?.title}</h3> 
+                                    <h3>{data?.title}</h3>
                                     <Button icon="pi pi-file-pdf" onClick={handleOpenPDF} label={isLang === "en" ? 'Download Book' : 'تحميل الكتاب'} />
                                 </div>
                                 <div className='blog_details_data' dangerouslySetInnerHTML={{ __html: data?.description }} />
@@ -89,13 +89,7 @@ const CompositionsDetails = () => {
                     </div> :
                     <div className='loader flex justify-content-center align-items-center'>
                         <div className="Player">
-                            <Player
-                                className='w-100'
-                                // src="https://assets3.lottiefiles.com/packages/lf20_ZJR0xnKKys.json"
-                                src={loader}
-                                autoplay
-                                loop
-                            />
+                            <img src={img.Logo} width={250} alt="" srcset="" />
                         </div>
                     </div>
             }
