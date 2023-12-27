@@ -44,7 +44,7 @@ const Home = () => {
   }, [isLang])
   useEffect(() => {
     window.scroll(0, 0)
-  }, [])
+  }, [isLang])
   return (
     <div className='position-relative'>
       {

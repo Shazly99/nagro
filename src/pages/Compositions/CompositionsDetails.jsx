@@ -49,7 +49,7 @@ const CompositionsDetails = () => {
     }, [isLang])
     useEffect(() => {
         window.scroll(0, 0)
-    }, [])
+    }, [isLang])
     const handleOpenPDF = () => {
         // Assuming data?.file contains the PDF file URL
         const pdfUrl = data?.file;

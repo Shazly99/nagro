@@ -48,7 +48,7 @@ const BlogsDetails = () => {
   }, [isLang])
   useEffect(() => {
     window.scroll(0, 0)
-  }, [])
+  }, [isLang])
 
   return (
 
