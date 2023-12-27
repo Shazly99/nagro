@@ -1,7 +1,7 @@
 import img from 'constants/Img'
 import { LocalizationContext } from 'context/LangChange';
 import ConnectHome from 'pages/Home/Connect/ConnectHome'
-import { useEffect } from 'react'
+import { useContext, useEffect } from 'react'
 
 const Connect = () => {
   let { isLang } = useContext(LocalizationContext);
