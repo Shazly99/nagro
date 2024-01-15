@@ -11,14 +11,16 @@ import cookies from 'js-cookie'
 import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { ApiContext } from 'context/FatchApi';
+import { LocalizationContext } from 'context/LangChange'
 const Footer = () => {
   const location = useLocation();
   const { t } = useTranslation()
+  const { isLang } = useContext(LocalizationContext)
   let { settings } = useContext(ApiContext)
   return (
     <>
       <div className="app_footer overflow-hidden">
-        <div className="app_footer_container">
+        <div className="app_footer_container ">
           <Row>
             <Col xl={3n} lg={3n} md={6} sm={12} className='app_footer_content ' >
               <img src={img.LogoBg} alt="" className='w-50 ' />
@@ -26,15 +28,15 @@ const Footer = () => {
               <div className="app_footer_social">
                 <span>{t('footer_follow')}</span>
                 <div className="icons flex flex-row gap-4 justify-content- mt-4 align-items-center">
-                  {
+                  {/* {
                     settings?.instagram &&
                     <a href={settings?.instagram} target="_blank" rel="noopener noreferrer">
                       <Instagram color={'#C4AB73'} />
                     </a>
-                  }
+                  } */}
                   {
                     settings?.linked_in &&
-                    <a href={settings?.linked_in} target="_blank" rel="noopener noreferrer">
+                    <a className='tiktok' href={settings?.linked_in} target="_blank" rel="noopener noreferrer">
                       <Linkedin color={'#C4AB73'} />
                     </a>
                   }
@@ -44,12 +46,12 @@ const Footer = () => {
                       <Twitter color={'#C4AB73'} />
                     </a>
                   }
-                  {
+                  {/* {
                     settings?.facebook &&
                     <a href={settings?.facebook} target="_blank" rel="noopener noreferrer">
                       <Facebook color={'#C4AB73'} />
                     </a>
-                  }
+                  } */}
                   {
                     settings?.whats &&
                     <a href={`https://wa.me/${settings?.whats}`} target="_blank" rel="noopener noreferrer">
@@ -72,18 +74,22 @@ const Footer = () => {
               </div>
               <div className="location_map mt-5">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14836.994644211562!2d39.116845!3d21.615232!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3db337d8cdedb%3A0x24094293cd97da6e!2z2LTYsdmD2Kkg2LfZhNi52Kog2LnYqNiv2KfZhNix2K3ZitmFINmG2KfZgtix2Ygg2YjZhdi52KrYsiDYt9mE2LnYqiDZhtin2YLYsdmIINmE2YTZhdit2KfZhdin2Kkg2YjYp9mE2KfYs9iq2LTYp9ix2KfYqiDYp9mE2YLYp9mG2YjZhtmK2Kk!5e0!3m2!1sen!2seg!4v1702369787309!5m2!1sen!2seg"
-                  width="100%" height="240px"   loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  width="100%" height="240px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
               <div className="address_footer mt-4" >
                 <span> {t('footer_address')} </span>
                 <div className="item">
-                  {
+                  {/* {
                     settings?.address?.map((item, index) => (
                       <p key={index} className='flex gap-2 align-items-center'>
                         <strong>{item?.city}: </strong>  <span >{item?.address}</span>
                       </p>
                     ))
-                  }
+                  } */}
+
+                  <p   className='flex gap-2 align-items-center'>
+                    <strong>{settings?.address[0]?.city}: </strong>  <span >{settings?.address[0]?.address}</span>
+                  </p>
                 </div>
               </div>
             </Col>
@@ -110,6 +116,10 @@ const Footer = () => {
             </Col>
           </Row>
         </div>
+
+      </div>
+      <div className="footer__copyright  ">
+        <p className='text-dark'>  {t('footer')} <a href="https://rightclick.sa/" target='_blank' className='text-dark text-decoration-underline'  >rightClick</a> <span dir={isLang === "ar" ? 'rtl' : 'ltr'}>2023 &copy; </span>  </p>
       </div>
     </>
   )

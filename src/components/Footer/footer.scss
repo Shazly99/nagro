@@ -54,9 +54,17 @@
                 display: flex;
 
                 svg {
-                    width: 20px;
-                    height: 20px;
+                    width: 25px;
+                    height: 25px;
                     cursor: pointer;
+                }
+
+                .tiktok{
+                    svg {
+                        width: 30px;
+                        height: 30px;
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -173,4 +181,22 @@
 
 [dir="rtl"] .address_footer .item p span {
     font-size: 16px !important;
+}
+
+.footer__copyright {
+    background-color: $mainColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    z-index: 99889999999999999999 !important;
+
+    p {
+        color: #000 !important;
+        font-size: 18px !important;
+        text-transform: capitalize;
+        margin: 0;
+        padding: 10px 0;
+        font-weight: 600;
+    }
 }

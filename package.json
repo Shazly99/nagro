@@ -2,6 +2,7 @@
   "name": "nagro",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nagro.com.sa/", 
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.5.3",
     "aos": "^2.3.4",

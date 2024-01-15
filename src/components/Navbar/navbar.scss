@@ -31,7 +31,7 @@
     width: 100%;
 
 
-    @media screen and (width < 1510px) {
+    @media screen and (width < 1200px) {
         display: none;
     }
 }
@@ -43,7 +43,7 @@
         border-radius: 50%;
     }
 
-    @media screen and (width < 1510px) {
+    @media screen and (width < 1200px) {
         display: block;
     }
 }
@@ -283,6 +283,9 @@
 
     .container-fluid {
         width: 85% !important;
+        @media screen and (width < 1300px) {
+            width: 95% !important;
+        }
     }
 
     .p-menuitem-text {
@@ -597,7 +600,7 @@
         object-fit: contain;
         transition: all 0.8s;
 
-        @media screen and (width < 1510px) {
+        @media screen and (width < 1200px) {
             display: none;
         }
     }
@@ -619,7 +622,7 @@
 
 
 .nav_logo_sidebar {
-    @media screen and (width < 1510px) {
+    @media screen and (width < 1200px) {
         width: 100% !important;
     }
 
@@ -629,7 +632,7 @@
         height: 100px;
         object-fit: contain;
 
-        @media screen and (width < 1510px) {
+        @media screen and (width < 1200px) {
             display: flex !important;
         }
 
@@ -712,7 +715,7 @@
     flex-direction: row;
     gap: 40px;
 
-    @media screen and (width < 1510px) {
+    @media screen and (width < 1200px) {
         display: none !important;
         width: 0;
     }
