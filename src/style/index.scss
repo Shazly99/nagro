@@ -28,7 +28,15 @@ body {
 ::-webkit-scrollbar-corner {
   background-color: transparent;
 }
-
+.p-button:enabled:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0.1rem $mainColor;
+ 
+}
+.p-button { 
+  border-color: $mainColor;
+}
 a {
   text-decoration: none !important;
   

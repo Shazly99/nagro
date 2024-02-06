@@ -1,6 +1,6 @@
 import Icons from 'constants/Icons'
 import { LocalizationContext } from 'context/LangChange'
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Col, Container, Form, Row } from 'react-bootstrap';
 import './connect.scss'
 import { ContantServices } from './ContantServices';
@@ -9,9 +9,11 @@ import AOS from 'aos';
 import * as Yup from 'yup';
 import { Button } from 'primereact/button';
 import { useTranslation } from 'react-i18next';
+import toast from 'react-hot-toast'
 
 const ConnectHome = () => {
   let { isLang } = useContext(LocalizationContext)
+  const [loading, setLoading] = useState(false)
   const { t } = useTranslation()
   const validationSchema = Yup.object().shape({
     name: Yup.string().required(isLang === "en" ? 'you name is required' : 'يرجى إدخال الاسم'),
@@ -30,11 +32,19 @@ const ConnectHome = () => {
     },
     validationSchema: validationSchema,
     onSubmit: async (values, { resetForm }) => {
+      setLoading(true)
       console.log(values);
       await ContantServices(isLang, values).then(({ data }) => {
-        console.log(data?.message);
+        console.log(data);
+        if (data?.status === 200) {
+          toast.success(data?.message)
+          resetForm();
+          setLoading(false)
 
-        resetForm();
+        }else{
+          setLoading(false)
+
+        }
       })
     }
   });
@@ -137,7 +147,7 @@ const ConnectHome = () => {
                   </Form.Group>
                 </Col>
               </Row>
-              <Button size='small' iconPos={isLang === "en" ? "left" : 'right'} icon="pi pi-arrow-left" type='submit' label={t('submit')}  className='rounded-2 mt-4 p-2 px-4' />
+              <Button size='small' loading={loading} iconPos={isLang === "en" ? "left" : 'right'} icon="pi pi-arrow-left" type='submit' label={t('submit')} className='rounded-2 mt-4 p-2 px-4' />
             </Form>
 
           </Col>
