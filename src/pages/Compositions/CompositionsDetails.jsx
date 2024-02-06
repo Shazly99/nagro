@@ -69,8 +69,7 @@ const CompositionsDetails = () => {
                             <div className="overlay ">
                                 <div className="header">
                                     <span>{data?.short_title}</span>
-                                </div>
-
+                                </div> 
                             </div>
                         </div>
                         <div>
@@ -82,7 +81,7 @@ const CompositionsDetails = () => {
                                     <h3>{data?.title}</h3>
                                     <Button icon="pi pi-file-pdf" onClick={handleOpenPDF} label={isLang === "en" ? 'Download Book' : 'تحميل الكتاب'} />
                                 </div>
-                                <div className='blog_details_data' dangerouslySetInnerHTML={{ __html: data?.description }} />
+                                <div className='blog_details_data mt-5' dangerouslySetInnerHTML={{ __html: data?.description }} />
 
                             </Row>
                         </div>

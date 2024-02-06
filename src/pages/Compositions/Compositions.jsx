@@ -67,7 +67,7 @@ const Compositions = () => {
 
             </div>
             <div className="app_blog_container">
-              <Row>
+              <Row className='flex justify-content-center align-items-center'>
                 {
                   data?.map((item, index) => (
                     <Col key={index} xl={6} lg={6} md={12} sm={12} className='blog_padding  '>

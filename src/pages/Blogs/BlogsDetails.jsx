@@ -15,7 +15,7 @@ import './blog.scss'
 
 const BlogsDetails = () => {
   let { isLang } = useContext(LocalizationContext);
-  let { id } = useParams(); 
+  let { id } = useParams();
   let { t } = useTranslation()
   const url = `${process.env.REACT_APP_API_URL}/blogs/${id}`;
   const [Loader, setLoader] = useState(false)
@@ -59,7 +59,7 @@ const BlogsDetails = () => {
         Loader === true ?
           <div className='app_blogs  mb-7'>
             <div className="header_banner " style={{ marginTop: '0px' }}>
-              <img src={img.header} alt="banner" className='w-100'  />
+              <img src={img.header} alt="banner" className='w-100' />
               <div className="overlay">
                 <div className="header">
                   <span>{data?.short_title}</span>
@@ -79,13 +79,13 @@ const BlogsDetails = () => {
                       <span>{format(parseISO(data?.date), 'd MMMM, yyyy', { locale: ar })}</span>
                   }
                 </div>
-                <div className='blog_details_data' dangerouslySetInnerHTML={{ __html: data?.description }} /> 
+                <div className='blog_details_data' dangerouslySetInnerHTML={{ __html: data?.description }} />
 
               </Row>
             </div>
           </div> :
           <div className='loader flex justify-content-center align-items-center'>
-    <div className="Player">
+            <div className="Player">
               <img src={img.Logo} width={250} alt="" srcset="" />
             </div>
           </div>

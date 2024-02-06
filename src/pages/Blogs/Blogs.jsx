@@ -57,7 +57,7 @@ const Blogs = () => {
         Loader === true ?
           <div className='app_blogs'>
             <div className="header_banner " style={{ marginTop: '90px' }}>
-              <img src={img.header} alt="banner" className='w-100'  />]
+              <img src={img.header} alt="banner" className='w-100' />]
               <div className="overlay">
                 <div className="header">
                   <span>{data?.section_title}</span>
@@ -84,8 +84,8 @@ const Blogs = () => {
                           </div>
                         </div>
                         <div className="blog_info shadow-2">
-                          <span className='title'>{item?.title}</span>
-                          <p>{item?.short_description?.split(' ')?.slice(0,20).join(' ')}</p>
+                          <span className='title'>{item?.short_title}</span>
+                          <p>{item?.short_description?.split(' ')?.slice(0, 20).join(' ')}</p>
                           <Link to={`/blogs/details/${item?.id}`}>
                             <div className="btn_more  cursor-pointer user-select-none flex gap-1  align-items-center">
                               <span>{t('btn_read_more')}</span>
@@ -102,7 +102,7 @@ const Blogs = () => {
             </div>
           </div> :
           <div className='loader flex justify-content-center align-items-center'>
-    <div className="Player">
+            <div className="Player">
               <img src={img.Logo} width={250} alt="" srcset="" />
             </div>
           </div>

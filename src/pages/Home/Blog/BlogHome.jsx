@@ -78,10 +78,10 @@ const BlogHome = ({ dataHeader, data }) => {
                 <Slider {...settings} className='slider__feedback  '>
                   {
                     data?.map((item, index) => (
-                      <Col key={index} xl={6} lg={6} md={6} sm={12} className='p-5 slider__item'>
-                        <div className="app_blog_content bg-white rounded-4 m-0 p-0 overflow-hidden ">
-                          <div className="blog_overlay overflow-hidden ">
-                            <img src={item?.image} className='w-100 rounded-3' />
+                      <Col key={index} xl={6} lg={6} md={6} sm={12} className='p-5 slider__item h-100'>
+                        <div className="app_blog_content bg-white rounded-4 m-0 p-0 overflow-hidden h-100">
+                          <div className="blog_overlay overflow-hidden h-100">
+                            <img src={item?.image} className='w-100   ' />
                             <div className="overlay">
                               <div className="blog_date">
                                 {
@@ -91,11 +91,11 @@ const BlogHome = ({ dataHeader, data }) => {
                                 }
                               </div>
                               <div className="blog_title">
-                                <span className='title'>{item?.title}</span>
+                                {/* <span className='title'>{item?.title}</span> */}
                               </div>
                             </div>
                           </div>
-                          <h1 className='text-center py-4'>{item?.title}</h1>
+                          <h4 className='text-center flex justify-content-center align-items-center py-4 h-8rem'>{item?.short_title}</h4>
                         </div>
                       </Col>
                     ))

@@ -5,6 +5,29 @@
 
     overflow: hidden;
 
+    .header_banner {
+        .overlay .header {
+            span {
+                display: block;
+    width: 100%;
+                @media screen and (width < 1200px) {
+                    font-size: 30px;
+
+                }
+
+                @media screen and (width < 900px) {
+                    font-size: 25px;
+
+                }
+
+                @media screen and (width < 700px) {
+                    font-size: 20px;
+                    text-align: center; 
+                }
+            }
+        }
+    }
+
     .app_blog_container {
         width: 80%;
         margin: auto;
@@ -12,6 +35,10 @@
 
         @media screen and (width < 900px) {
             width: 90%;
+        }
+
+        @media screen and (width < 767px) {
+            width: 95%;
         }
 
         .blog_padding {
@@ -158,14 +185,15 @@
 }
 
 .app_blogs_details {
-    .p-button{
+    .p-button {
         border-radius: 10px;
         padding: 5px 20px !important;
         background-color: transparent;
-        border-color: $mainColor; 
+        border-color: $mainColor;
         display: flex;
         gap: 5px;
     }
+
     h3 {
         color: #383B52;
         font-family: Cairo;
@@ -174,24 +202,51 @@
         font-weight: 700;
         line-height: normal;
         text-transform: capitalize;
+
+        @media screen and (width < 1200px) {
+            font-size: 30px;
+
+        }
+
+        @media screen and (width < 900px) {
+            font-size: 25px;
+
+        }
+
+        @media screen and (width < 700px) {
+            font-size: 20px;
+            text-align: center;
+        }
     }
 
-   .p-button-icon, .p-button-label  {
-        color: #C4AB73; 
+    .header {
+        @media screen and (width < 700px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+    .p-button-icon,
+    .p-button-label {
+        color: #C4AB73;
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
-        line-height: normal; 
+        line-height: normal;
+
         @media screen and (width < 700px) {
-        font-size: 16px;
-          
-    
+            font-size: 16px;
         }
     }
 }
 
 
 .blog_details_data {
+
+    h1,
     h3 {
         color: #383B52;
         font-family: Cairo;
@@ -200,6 +255,21 @@
         font-weight: 700;
         line-height: normal;
         text-transform: capitalize;
+
+        @media screen and (width < 1200px) {
+            font-size: 30px;
+
+        }
+
+        @media screen and (width < 900px) {
+            font-size: 30px;
+
+        }
+
+        @media screen and (width < 700px) {
+            font-size: 20px;
+
+        }
     }
 
     span {
@@ -225,10 +295,31 @@
     }
 
 
-    ul{
+    ul {
         margin-top: 20px;
         display: flex;
         flex-direction: column;
         gap: 10px;
+
+        li {
+            span {
+                background-color: transparent !important;
+
+                @media screen and (width < 1200px) {
+                    font-size: 30px;
+
+                }
+
+                @media screen and (width < 900px) {
+                    font-size: 30px;
+
+                }
+
+                @media screen and (width < 700px) {
+                    font-size: 16px;
+
+                }
+            }
+        }
     }
 }
